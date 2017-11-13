@@ -1,0 +1,6 @@
+rdflib
+ConfigParser
+requests
+munkres
+numpy
+ujson

@@ -74,7 +74,13 @@ sbt 'run 9001'
 
 ### Running the example
 
-Set the RDF Graphs to merge, the ontologies and the path to save the result in **dataExample/config.ini** and run the following command in the same folder.
+* Install the python requirements
+
+```
+pip install -r requirements.txt
+```
+
+* Set the RDF Graphs to merge, the ontologies and the path to save the result in **dataExample/config.ini** and run the following command in the same folder.
 
 ```
 python example.py
