@@ -10,14 +10,14 @@ git clone https://github.com/RDF-Molecules/operators
 git clone https://github.com/RDF-Molecules/merge_service
 ```
 
-##For sim_service you need to install
+## For sim_service you need to install
 
 * JDK 1.8
 * Play Web Framework 2.5.12 "Streamy" and Activator 1.3.12
 
-###For Activator 1.3.12 run the following lines
+### For Activator 1.3.12 run the following lines
 
-###Install Scala
+### Install Scala
 ```
 sudo apt-get remove scala-library scala
 wget http://www.scala-lang.org/files/archive/scala-2.11.6.deb
@@ -26,7 +26,7 @@ sudo apt-get update
 sudo apt-get install scala
 ```
 
-###Download and Install Play (the folder should have permission to write)
+### Download and Install Play (the folder should have permission to write)
 
 ```
 cd /opt
@@ -35,7 +35,7 @@ unzip typesafe-activator-1.3.2-minimal.zip
 mv activator-1.3.2-minimal activator
 ```
 
-###Add the activator script to your PATH and execute Activator
+### Add the activator script to your PATH and execute Activator
 
 ```
 cd /opt/activator
@@ -45,7 +45,7 @@ chmod a+x activator
 ./activator
 ```
 
-##For merge_service you will need to run
+### For merge_service you will need to run
 ```
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
@@ -65,7 +65,7 @@ For merge service
 sbt 'run 9001'
 ```
 
-## Running the example
+### Running the example
 
 Set the RDF Graphs in dataExample folder and run the following command
 
