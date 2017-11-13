@@ -62,12 +62,11 @@ activator run
 
 For merge service
 
-Set the rdf path in 
-merge_service/conf/application.conf
+Set the rdf path in **merge_service/conf/application.conf**
 
-* fusion.model_1.location = "/home/roa/internship/rdf_integrator/dataExample/test1.nt"
+* fusion.model_1.location = "<path_to_folder>/rdf_integrator/dataExample/test1.nt"
 
-* fusion.model_2.location = "/home/roa/internship/rdf_integrator/dataExample/test2.nt"
+* fusion.model_2.location = "<path_to_folder>/rdf_integrator/dataExample/test2.nt"
 
 ```
 sbt 'run 9001'
@@ -75,7 +74,7 @@ sbt 'run 9001'
 
 ### Running the example
 
-Set the RDF Graphs in dataExample/config.ini and run the following command in the same folder
+Set the RDF Graphs in **dataExample/config.ini** and run the following command in the same folder
 
 ```
 python example.py
