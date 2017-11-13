@@ -1,5 +1,5 @@
 import rdflib
-from ..operators.mFuhsion.mFuhsionPerfect import MFuhsionPerfect
+from mFuhsionPerfect import MFuhsionPerfect
 import ConfigParser
 import requests
 import json

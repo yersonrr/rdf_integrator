@@ -1,0 +1,19 @@
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f61b91ed-13b6-43d6-8580-2bd9da1b221a> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f61b91ed-13b6-43d6-8580-2bd9da1b221a> <http://iasis/vocab/id> <http://iasis/vocab/C0014869> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f61b91ed-13b6-43d6-8580-2bd9da1b221a> <http://iasis/vocab/annLabel> "Peptic Esophagitis" .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f61b91ed-13b6-43d6-8580-2bd9da1b221a> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f61b91ed-13b6-43d6-8580-2bd9da1b221a> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f61b91ed-13b6-43d6-8580-2bd9da1b221a> <http://iasis/vocab/confidence> "1.0" .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f9c4cd6a-176e-4d73-a22c-e458a366cf93> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f9c4cd6a-176e-4d73-a22c-e458a366cf93> <http://iasis/vocab/id> <http://iasis/vocab/C0031149> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f9c4cd6a-176e-4d73-a22c-e458a366cf93> <http://iasis/vocab/annLabel> "Peritoneal Neoplasm" .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f9c4cd6a-176e-4d73-a22c-e458a366cf93> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f9c4cd6a-176e-4d73-a22c-e458a366cf93> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/f9c4cd6a-176e-4d73-a22c-e458a366cf93> <http://iasis/vocab/confidence> "1.0" .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <http://iasis/vocab/provenance> <http://iasis/vocab/PubMed> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <http://schema.org/url> "https://www.ncbi.nlm.nih.gov/pubmed/28381756" .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/Publication> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/annotation2> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <http://iasis/vocab/has_mesh> <http://iasis/vocab/annotation1> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/annotation3> .
+<http://vocab.lidakra.de/fuhsen/search/merged_entity/e78feeaa-ae96-4dbb-982d-ee5e89d0e787> <http://iasis/vocab/has_mesh> <http://iasis/vocab/annotation4> .
