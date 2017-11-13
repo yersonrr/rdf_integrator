@@ -1,0 +1,17 @@
+<http://iasis/vocab/28381756> <http://iasis/vocab/provenance> <http://iasis/vocab/PubMed>.
+<http://iasis/vocab/28381756> <http://schema.org/url> "https://www.ncbi.nlm.nih.gov/pubmed/28381756".
+<http://iasis/vocab/28381756> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/Publication>.
+<http://iasis/vocab/28381756> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/annotation2>.
+<http://iasis/vocab/28381756> <http://iasis/vocab/has_mesh> <http://iasis/vocab/annotation1>.
+<http://iasis/vocab/annotation1> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/id> <http://iasis/vocab/C0031149>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/annLabel> "Peritoneal Neoplasm".
+<http://iasis/vocab/annotation1> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/confidence> "1.0".
+<http://iasis/vocab/annotation2> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/id> <http://iasis/vocab/C0014869>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/annLabel> "Peptic Esophagitis".
+<http://iasis/vocab/annotation2> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/confidence> "1.0".

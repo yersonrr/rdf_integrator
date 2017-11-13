@@ -1,0 +1,145 @@
+<http://iasis/vocab/Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/annotationtation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/Biopsy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/BioMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/LCPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/LCPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/Publication> .
+<http://iasis/vocab/ADPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/ADPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/Publication> .
+<http://iasis/vocab/Condannotationtation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/Condannotationtation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/Interannotationtation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/Interannotationtation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/LCPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/LCPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/ADPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/ADPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/LCTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/LCTreatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/ADTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/ADTreatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/PubRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/VocabTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/CUITerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/LCannotationtation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/LCannotationtation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/ADannotationtation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/ADannotationtation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/AnalysisTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/BioMarkerLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/TConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/TDose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasis/vocab/provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/provenance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Publication> .
+<http://iasis/vocab/provenance> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/PubRepository> .
+<http://iasis/vocab/confidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/confidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/confidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/id> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/CUITerms> .
+<http://iasis/vocab/annLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/annLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/annLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/source> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/source> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/VocabTerms> .
+<http://iasis/vocab/precTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/precTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/precTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/AnalysisTool> .
+<http://iasis/vocab/has_Mesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/has_Mesh> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Publication> .
+<http://iasis/vocab/has_Mesh> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/mentioned_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/mentioned_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Publication> .
+<http://iasis/vocab/mentioned_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/maps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/maps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/maps> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/birthday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/birthday> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/birthday> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/Gender> .
+<http://iasis/vocab/researchID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/researchID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/researchID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/genDiagnostic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/genDiagnostic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/genDiagnostic> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/Condannotationtation> .
+<http://iasis/vocab/observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/observation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/concentration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/concentration> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/TConcentration> .
+<http://iasis/vocab/dose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/dose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/dose> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/TDose> .
+<http://iasis/vocab/tDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/tDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/tDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/bDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasis/vocab/bDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Biopsy> .
+<http://iasis/vocab/bDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iasis/vocab/has_Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/has_Treatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Patient> .
+<http://iasis/vocab/has_Treatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/diagnostic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/diagnostic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Biopsy> .
+<http://iasis/vocab/diagnostic> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/Condannotationtation> .
+<http://iasis/vocab/has_BioMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/has_BioMarker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Biopsy> .
+<http://iasis/vocab/has_BioMarker> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/BioMarker> .
+<http://iasis/vocab/has_Biopsy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/has_Biopsy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/LCPatient> .
+<http://iasis/vocab/has_Biopsy> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/Biopsy> .
+<http://iasis/vocab/bmDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/bmDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/BioMarker> .
+<http://iasis/vocab/bmDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/annotationtation> .
+<http://iasis/vocab/hasLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/hasLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/BioMarker> .
+<http://iasis/vocab/hasLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/BioMarkerLevel> .
+<http://iasis/vocab/prescriptedDrug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasis/vocab/prescriptedDrug> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasis/vocab/Treatment> .
+<http://iasis/vocab/prescriptedDrug> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasis/vocab/Interannotationtation> .
+<http://iasis/vocab/28381756> <http://purl.org/dc/elements/1.1/title> "A Rare Case of Biphasic Malignant Peritoneal Mesothelioma with Refractory Ascites".
+<http://iasis/vocab/28381756> <http://iasis/vocab/provenance> <http://iasis/vocab/PubMed>.
+<http://iasis/vocab/28381756> <http://schema.org/url> "https://www.ncbi.nlm.nih.gov/pubmed/28381756".
+<http://iasis/vocab/28381756> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/Publication>.
+<http://iasis/vocab/28381756> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/annotation2>.
+<http://iasis/vocab/28381756> <http://iasis/vocab/has_mesh> <http://iasis/vocab/annotation1>.
+<http://iasis/vocab/annotation1> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/id> <http://iasis/vocab/C0031149>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/annLabel> "Peritoneal Neoplasm".
+<http://iasis/vocab/annotation1> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT>.
+<http://iasis/vocab/annotation1> <http://iasis/vocab/confidence> "1.0".
+<http://iasis/vocab/annotation2> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/id> <http://iasis/vocab/C0014869>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/annLabel> "Peptic Esophagitis".
+<http://iasis/vocab/annotation2> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT>.
+<http://iasis/vocab/annotation2> <http://iasis/vocab/confidence> "1.0".
+<http://iasis/vocab/01> <http://purl.org/dc/elements/1.1/title> "A Rare Case of Biphasic Malignant Peritoneal Mesothelioma with Refractory Ascites".
+<http://iasis/vocab/01> <http://iasis/vocab/provenance> <http://iasis/vocab/PubMed>.
+<http://iasis/vocab/01> <http://schema.org/url> "https://www.ncbi.nlm.nih.gov/pubmed/28381756".
+<http://iasis/vocab/01> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/Publication>.
+<http://iasis/vocab/01> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/annotation3>.
+<http://iasis/vocab/01> <http://iasis/vocab/has_mesh> <http://iasis/vocab/annotation4>.
+<http://iasis/vocab/annotation4> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotation4> <http://iasis/vocab/id> <http://iasis/vocab/C0031149>.
+<http://iasis/vocab/annotation4> <http://iasis/vocab/annLabel> "Peritoneal Neoplasm".
+<http://iasis/vocab/annotation4> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
+<http://iasis/vocab/annotation4> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT>.
+<http://iasis/vocab/annotation4> <http://iasis/vocab/confidence> "1.0".
+<http://iasis/vocab/annotation3> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotation3> <http://iasis/vocab/id> <http://iasis/vocab/C0014869>.
+<http://iasis/vocab/annotation3> <http://iasis/vocab/annLabel> "Peptic Esophagitis".
+<http://iasis/vocab/annotation3> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
+<http://iasis/vocab/annotation3> <http://iasis/vocab/precTool> <http://iasis/vocab/ODPT>.
+<http://iasis/vocab/annotation3> <http://iasis/vocab/confidence> "1.0".
