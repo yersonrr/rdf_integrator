@@ -107,8 +107,15 @@ def main():
 	jsonToJoin = {}
 	jsonToJoin["tasks"] = toJoin
 
-	url = "http://localhost:9001/fusion/"+fusion_policy
+	url = "http://localhost:9001/setlocation"
 	headers = {'content-type': "application/json"}
+	data = {"location1":file_name1, 
+		"location2":file_name2}
+	data = json.dumps(data)
+	response = requests.post(url, data=data, headers=headers)
+	print response
+
+	url = "http://localhost:9001/fusion/"+fusion_policy
 	data = jsonToJoin
 	data = json.dumps(data)
 	response = requests.post(url, data=data, headers=headers)

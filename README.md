@@ -6,7 +6,6 @@ First you need to clone this repositorie and run the following lines inside the 
 
 ```
 git clone https://github.com/RDF-Molecules/sim_service
-git clone https://github.com/RDF-Molecules/operators
 git clone https://github.com/RDF-Molecules/merge_service
 ```
 
@@ -71,6 +70,19 @@ Set the rdf path in **merge_service/conf/application.conf**
 ```
 sbt 'run 9001'
 ```
+
+Also the models can be set using a POST request e.g., http://localhost:9001/setlocation
+
+A dicctionary of paths should be send in the POST body
+
+```
+{
+ "tasks" : [ 
+ 	{ "location1": "/path/to/file.nt" },
+ 	{ "location2": "/path/to/file2.nt" }
+ ]
+}
+``` 
 
 ### Running the example
 

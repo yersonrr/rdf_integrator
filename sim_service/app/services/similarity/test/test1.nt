@@ -1,0 +1,18 @@
+<http://vocol.iais.fraunhofer.de/iasis/28381756> <http://purl.org/dc/elements/1.1/title> "A Rare Case of Biphasic Malignant Peritoneal Mesothelioma with Refractory Ascites".
+<http://vocol.iais.fraunhofer.de/iasis/28381756> <http://vocol.iais.fraunhofer.de/iasis/provenance> <http://vocol.iais.fraunhofer.de/iasis/PubMed>.
+<http://vocol.iais.fraunhofer.de/iasis/28381756> <http://schema.org/url> "https://www.ncbi.nlm.nih.gov/pubmed/28381756".
+<http://vocol.iais.fraunhofer.de/iasis/28381756> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://vocol.iais.fraunhofer.de/iasis/Publication>.
+<http://vocol.iais.fraunhofer.de/iasis/28381756> <http://vocol.iais.fraunhofer.de/iasis/mentioned_in> <http://vocol.iais.fraunhofer.de/iasis/anno2>.
+<http://vocol.iais.fraunhofer.de/iasis/28381756> <http://vocol.iais.fraunhofer.de/iasis/has_mesh> <http://vocol.iais.fraunhofer.de/iasis/anno1>.
+<http://vocol.iais.fraunhofer.de/iasis/anno1> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://vocol.iais.fraunhofer.de/iasis/LCAnnotation>.
+<http://vocol.iais.fraunhofer.de/iasis/anno1> <http://vocol.iais.fraunhofer.de/iasis/id> <http://vocol.iais.fraunhofer.de/iasis/C0031149>.
+<http://vocol.iais.fraunhofer.de/iasis/anno1> <http://vocol.iais.fraunhofer.de/iasis/annLabel> "Peritoneal Neoplasm".
+<http://vocol.iais.fraunhofer.de/iasis/anno1> <http://vocol.iais.fraunhofer.de/iasis/source> <http://vocol.iais.fraunhofer.de/iasis/UMLS_CUI>.
+<http://vocol.iais.fraunhofer.de/iasis/anno1> <http://vocol.iais.fraunhofer.de/iasis/precTool> <http://vocol.iais.fraunhofer.de/iasis/ODPT>.
+<http://vocol.iais.fraunhofer.de/iasis/anno1> <http://vocol.iais.fraunhofer.de/iasis/confidence> "1.0".
+<http://vocol.iais.fraunhofer.de/iasis/anno2> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://vocol.iais.fraunhofer.de/iasis/LCAnnotation>.
+<http://vocol.iais.fraunhofer.de/iasis/anno2> <http://vocol.iais.fraunhofer.de/iasis/id> <http://vocol.iais.fraunhofer.de/iasis/C0014869>.
+<http://vocol.iais.fraunhofer.de/iasis/anno2> <http://vocol.iais.fraunhofer.de/iasis/annLabel> "Peptic Esophagitis".
+<http://vocol.iais.fraunhofer.de/iasis/anno2> <http://vocol.iais.fraunhofer.de/iasis/source> <http://vocol.iais.fraunhofer.de/iasis/UMLS_CUI>.
+<http://vocol.iais.fraunhofer.de/iasis/anno2> <http://vocol.iais.fraunhofer.de/iasis/precTool> <http://vocol.iais.fraunhofer.de/iasis/ODPT>.
+<http://vocol.iais.fraunhofer.de/iasis/anno2> <http://vocol.iais.fraunhofer.de/iasis/confidence> "1.0".
