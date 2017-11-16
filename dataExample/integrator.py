@@ -31,6 +31,28 @@ def getPredicateObject(subjects, graph, index):
 	return mergeDict
 
 
+def getSubject(subjects, graph, toJoin, uri):
+
+	newGraph = rdflib.Graph()
+	for subject in subjects:
+		for tj in toJoin:
+			belong = False
+
+			compare = tj[uri].replace('<','').replace('>','')
+			if compare == str(subject):
+				belong = True
+				
+			if belong: 
+				break
+
+		if not belong:
+			for node in graph:
+				if node[0] == subject:
+					newGraph.add(node)
+
+	return newGraph
+
+
 def integrator(config_file):
 	config = ConfigParser.ConfigParser()
 	config.read(config_file)
@@ -92,6 +114,12 @@ def integrator(config_file):
 		tupl['uri2'] = str(tpl[1])
 		toJoin.append(tupl)
 
+	toSearch = getSubject(subjects, g, toJoin, 'uri1')
+	toSearch2 = getSubject(subjects2, g2, toJoin, 'uri2')
+
+	toSearch = toSearch.serialize(format='nt')
+	toSearch2 = toSearch2.serialize(format='nt')
+
 	for elem in toJoin:
 		elem['uri1'] = elem['uri1'].replace('<','').replace('>','')
 		elem['uri2'] = elem['uri2'].replace('<','').replace('>','')
@@ -112,6 +140,13 @@ def integrator(config_file):
 	data = json.dumps(data)
 	response = requests.post(url, data=data, headers=headers)
 	resp_object = response.text
+
+	if len(toSearch) > 1:
+		F.write(toSearch[:-1])
+
+	if len(toSearch2) > 1:
+		F.write(toSearch2[:-1])
+
 	F.write(resp_object)
 	F.close()
 
