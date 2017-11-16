@@ -76,11 +76,9 @@ Also the models can be set using a POST request e.g., http://localhost:9001/setl
 A dicctionary of paths should be send in the POST body
 
 ```
-{
- "tasks" : [ 
- 	{ "location1": "/path/to/file.nt" },
- 	{ "location2": "/path/to/file2.nt" }
- ]
+{ 
+  "location1": "/path/to/file.nt",
+  "location2": "/path/to/file2.nt"
 }
 ``` 
 
@@ -98,4 +96,22 @@ pip install -r requirements.txt
 python example.py
 ```
 
-The example write the result in the path specified in config.ini with the name "new_rdfGraph.nt" 
+The example write the result in the path specified in config.ini with the name "new_rdfGraph.nt".
+
+The config.ini must have the following structure, and must be in the same directory as the semantify.py script:
+
+```
+
+[RDFData]
+rdf1 = /Absolute/path/to/file.nt
+rdf2 = /Absolute/path/to/file2.nt
+ontology = /Absolute/path/to/file3.nt
+pathToSave = /Path/to/save/the/output
+
+[Class]
+similarity_metric = gades
+threshold = 0.8
+fusion_policy = union
+
+
+```
