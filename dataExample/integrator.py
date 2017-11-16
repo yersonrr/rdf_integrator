@@ -6,6 +6,31 @@ import json
 import os.path
 import sys, getopt
 
+def getPredicateObject(subjects, graph, index):
+
+	mergeDict = []
+
+	for s in subjects:
+		dict_new = {}
+		dict_new['head'] = {}
+		dict_new['head']['index'] = index
+		index += 1
+		dict_new['head']['uri'] = s.n3()
+		dict_new['head']['row'] = True
+		dict_new['tail'] = []
+		for i in graph.predicate_objects(subject=s):
+			dict_predicateObject = {}
+			# PREDICATE = PROP
+			dict_predicateObject['prop'] = i[0].n3()
+			# OBJECT = VALUE
+			dict_predicateObject['value'] = i[1].n3()
+			dict_new['tail'].append(dict_predicateObject)
+
+		mergeDict.append(dict_new)
+
+	return mergeDict
+
+
 def integrator(config_file):
 	config = ConfigParser.ConfigParser()
 	config.read(config_file)
@@ -50,41 +75,8 @@ def integrator(config_file):
 	simfunction = config.get('Class','similarity_metric')
 	fusion_policy = config.get('Class','fusion_policy')
 
-	for s in subjects:
-		dict_new = {}
-		dict_new['head'] = {}
-		dict_new['head']['index'] = index
-		index += 1
-		dict_new['head']['uri'] = s.n3()
-		dict_new['head']['row'] = True
-		dict_new['tail'] = []
-		for i in g.predicate_objects(subject=s):
-			dict_predicateObject = {}
-			# PREDICATE = PROP
-			dict_predicateObject['prop'] = i[0].n3()
-			# OBJECT = VALUE
-			dict_predicateObject['value'] = i[1].n3()
-			dict_new['tail'].append(dict_predicateObject)
-
-		mergeDict.append(dict_new)
-
-	for s in subjects2:
-		dict_new = {}
-		dict_new['head'] = {}
-		dict_new['head']['index'] = index
-		index += 1
-		dict_new['head']['uri'] = s.n3()
-		dict_new['head']['row'] = True
-		dict_new['tail'] = []
-		for i in g2.predicate_objects(subject=s):
-			dict_predicateObject = {}
-			# PREDICATE = PROP
-			dict_predicateObject['prop'] = i[0].n3()
-			# OBJECT = VALUE
-			dict_predicateObject['value'] = i[1].n3()
-			dict_new['tail'].append(dict_predicateObject)
-
-		mergeDict2.append(dict_new)
+	mergeDict = getPredicateObject(subjects, g, index)
+	mergeDict2 = getPredicateObject(subjects2, g2, index)
 
 	url = "http://localhost:9000/similarity/initialize?model_1="+file_ontologies
 	headers = {'content-type': "application/json"}
