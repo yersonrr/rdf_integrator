@@ -93,7 +93,7 @@ pip install -r requirements.txt
 * Set the RDF Graphs to merge, the ontologies and the path to save the result in **dataExample/config.ini** and run the following command in the same folder.
 
 ```
-python integrator.py
+python integrator.py -c config.ini
 ```
 
 The example write the result in the path specified in config.ini with the name "new_rdfGraph.nt".

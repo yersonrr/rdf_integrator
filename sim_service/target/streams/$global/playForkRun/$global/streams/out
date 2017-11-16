@@ -1,5 +1,5 @@
 [0m[[0minfo[0m] [0mSetting up Play fork run ... (use Ctrl+D to cancel)[0m
-[0m[[0minfo[0m] [0mUpdating {file:/home/roa/internship/rdf_integrator/gades/sim_service/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/roa/internship/rdf_integrator/sim_service/}root...[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#twirl-api_2.11;1.1.1 ...[0m
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-lang3;3.4 ...[0m
@@ -218,7 +218,8 @@
 [0m[[0minfo[0m] [0m[0m
 [0m[[0minfo[0m] [0m[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-11-15T14:41:48.051Z.[0m
+[0m[[0minfo[0m] [0mCompiling 16 Scala sources and 25 Java sources to /home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-11-16T12:07:47.652Z.[0m
 [0m[[33mwarn[0m] [0mapplication - No models configured!!! Similarity service will not work[0m
 [0m[[0minfo[0m] [0mplay.api.Play - Application started (Dev)[0m
 [0m[[0minfo[0m] [0mapplication - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None[0m
@@ -281,107 +282,3 @@
 [0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01[0m
 [0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4[0m
 [0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None[0m
-[0m[[0minfo[0m] [0mapplication - Loading model 1[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[0minfo[0m] [0mGOOOOL[0m
-[0m[[0minfo[0m] [0mReasoner ready[0m
-[0m[[0minfo[0m] [0mRelations read[0m
-[0m[[0minfo[0m] [0mClasses read[0m
-[0m[[0minfo[0m] [0mapplication - Similarity Service Successfully Initialized!!![0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None[0m
-[0m[[0minfo[0m] [0mapplication - Loading model 1[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[0minfo[0m] [0mGOOOOL[0m
-[0m[[0minfo[0m] [0mReasoner ready[0m
-[0m[[0minfo[0m] [0mRelations read[0m
-[0m[[0minfo[0m] [0mClasses read[0m
-[0m[[0minfo[0m] [0mapplication - Similarity Service Successfully Initialized!!![0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None[0m
-[0m[[0minfo[0m] [0mapplication - Loading model 1[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[0minfo[0m] [0mGOOOOL[0m
-[0m[[0minfo[0m] [0mReasoner ready[0m
-[0m[[0minfo[0m] [0mRelations read[0m
-[0m[[0minfo[0m] [0mClasses read[0m
-[0m[[0minfo[0m] [0mapplication - Similarity Service Successfully Initialized!!![0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None[0m
-[0m[[0minfo[0m] [0mapplication - Loading model 1[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[0minfo[0m] [0mGOOOOL[0m
-[0m[[0minfo[0m] [0mReasoner ready[0m
-[0m[[0minfo[0m] [0mRelations read[0m
-[0m[[0minfo[0m] [0mClasses read[0m
-[0m[[0minfo[0m] [0mapplication - Similarity Service Successfully Initialized!!![0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None[0m
-[0m[[0minfo[0m] [0mapplication - Loading model 1[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[33mwarn[0m] [0mo.s.o.u.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl[0m
-[0m[[0minfo[0m] [0mGOOOOL[0m
-[0m[[0minfo[0m] [0mReasoner ready[0m
-[0m[[0minfo[0m] [0mRelations read[0m
-[0m[[0minfo[0m] [0mClasses read[0m
-[0m[[0minfo[0m] [0mapplication - Similarity Service Successfully Initialized!!![0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4[0m
-[0m[[0minfo[0m] [0mapplication - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3[0m
-[0m[[0minfo[0m] [0mStopping Play fork run ...[0m
-[0m[[0minfo[0m] [0mJVM exiting, shutting down Play fork run ...[0m
-[0m[[0minfo[0m] [0mPlay fork run already stopped ...[0m
-[0m[[0minfo[0m] [0mForked Play process exited with status: 130[0m

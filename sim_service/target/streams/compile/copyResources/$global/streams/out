@@ -1,4 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/roa/internship/rdf_integrator/gades/sim_service/conf/application.conf,/home/roa/internship/rdf_integrator/gades/sim_service/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/home/roa/internship/rdf_integrator/gades/sim_service/conf/logback.xml,/home/roa/internship/rdf_integrator/gades/sim_service/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/home/roa/internship/rdf_integrator/gades/sim_service/conf/routes,/home/roa/internship/rdf_integrator/gades/sim_service/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/roa/internship/rdf_integrator/sim_service/conf/application.conf,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/roa/internship/rdf_integrator/sim_service/conf/logback.xml,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/roa/internship/rdf_integrator/sim_service/conf/routes,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/routes)[0m

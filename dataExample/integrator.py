@@ -4,10 +4,30 @@ import ConfigParser
 import requests
 import json
 import os.path
+import sys, getopt
 
 def main():
+
+	argv = sys.argv[1:]
+	try:
+		opts, args = getopt.getopt(argv, 'hc:', 'configFile=')
+	except getopt.GetoptError:
+		print('python integrator.py -c <configFile>')
+		sys.exit(1)
+
+	if len(opts) == 0:
+		print('Error: python integrator.py -c <configFile>')
+		sys.exit(1)
+
+	for opt, arg in opts:
+		if opt == '-h':
+			print('python integrator.py -c <configFile>')
+			sys.exit()
+		elif opt == '-c' or opt == '--configFile':
+			config_file = arg
+
 	config = ConfigParser.ConfigParser()
-	config.read("./config.ini")
+	config.read(config_file)
 	save_path = config.get('RDFData','pathToSave')
 
 	completeName = os.path.join(save_path, "new_rdfGraph.nt")         
