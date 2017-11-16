@@ -93,12 +93,12 @@ pip install -r requirements.txt
 * Set the RDF Graphs to merge, the ontologies and the path to save the result in **dataExample/config.ini** and run the following command in the same folder.
 
 ```
-python example.py
+python integrator.py
 ```
 
 The example write the result in the path specified in config.ini with the name "new_rdfGraph.nt".
 
-The config.ini must have the following structure, and must be in the same directory as the semantify.py script:
+The config.ini must have the following structure, and must be in the same directory as the integrator.py script:
 
 ```
 
