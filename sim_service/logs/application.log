@@ -1,425 +1,58 @@
-2017-11-16 22:53:23,509 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-11-16T21:53:23.504Z.
-2017-11-16 22:53:23,523 [WARN] from application in ForkJoinPool-1-worker-1 - No models configured!!! Similarity service will not work
-2017-11-16 22:53:23,675 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-11-16 22:53:23,713 [INFO] from application in application-akka.actor.default-dispatcher-6 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:53:23,713 [INFO] from application in application-akka.actor.default-dispatcher-6 - Loading model 1
-2017-11-16 22:53:23,989 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-6 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:53:23,989 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-6 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:53:24,028 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-6 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:53:24,028 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-6 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:53:24,348 [INFO] from application in application-akka.actor.default-dispatcher-6 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:53:24,553 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:53:24,559 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:53:24,561 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:53:24,561 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:53:24,562 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:53:24,570 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:53:24,571 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:53:24,571 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:53:24,571 [INFO] from application in application-akka.actor.default-dispatcher-2 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:54:49,006 [INFO] from application in application-akka.actor.default-dispatcher-7 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:54:49,006 [INFO] from application in application-akka.actor.default-dispatcher-7 - Loading model 1
-2017-11-16 22:54:49,078 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:54:49,078 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:54:49,079 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:54:49,079 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:54:49,134 [INFO] from application in application-akka.actor.default-dispatcher-7 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:54:49,144 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:54:49,147 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:54:49,148 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:54:49,148 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:54:49,148 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:54:49,149 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:54:49,149 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:54:49,149 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:54:49,149 [INFO] from application in application-akka.actor.default-dispatcher-9 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:55:28,034 [INFO] from application in application-akka.actor.default-dispatcher-10 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:55:28,034 [INFO] from application in application-akka.actor.default-dispatcher-10 - Loading model 1
-2017-11-16 22:55:28,096 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-10 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:55:28,096 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-10 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:55:28,097 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-10 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:55:28,097 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-10 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:55:28,166 [INFO] from application in application-akka.actor.default-dispatcher-10 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:55:28,180 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:55:28,181 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:55:28,182 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:56:23,870 [INFO] from application in application-akka.actor.default-dispatcher-13 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:56:23,870 [INFO] from application in application-akka.actor.default-dispatcher-13 - Loading model 1
-2017-11-16 22:56:23,934 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:23,934 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:23,935 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:23,936 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:23,979 [INFO] from application in application-akka.actor.default-dispatcher-13 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:56:23,987 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:56:23,988 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:56:23,988 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:56:23,989 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:56:23,989 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:56:23,989 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:56:23,989 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:56:23,989 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:56:23,989 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:56:46,846 [INFO] from application in application-akka.actor.default-dispatcher-13 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:56:46,846 [INFO] from application in application-akka.actor.default-dispatcher-13 - Loading model 1
-2017-11-16 22:56:46,900 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:46,901 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:46,911 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:46,912 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:56:46,950 [INFO] from application in application-akka.actor.default-dispatcher-13 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:56:46,958 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:56:46,959 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:56:46,960 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:56:46,960 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:56:46,961 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:56:46,961 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:56:46,961 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:56:46,961 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:56:46,961 [INFO] from application in application-akka.actor.default-dispatcher-13 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:57:28,478 [INFO] from application in application-akka.actor.default-dispatcher-17 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:57:28,478 [INFO] from application in application-akka.actor.default-dispatcher-17 - Loading model 1
-2017-11-16 22:57:28,537 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:57:28,538 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:57:28,540 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:57:28,540 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:57:28,589 [INFO] from application in application-akka.actor.default-dispatcher-17 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:57:28,598 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:57:28,599 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:57:28,599 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:58:25,233 [INFO] from application in application-akka.actor.default-dispatcher-20 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:58:25,234 [INFO] from application in application-akka.actor.default-dispatcher-20 - Loading model 1
-2017-11-16 22:58:25,300 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:25,301 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:25,302 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:25,303 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:25,335 [INFO] from application in application-akka.actor.default-dispatcher-20 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:58:25,346 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:58:25,347 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:58:25,347 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:58:25,347 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:58:25,347 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:58:25,347 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:58:25,347 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:58:25,348 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:58:25,348 [INFO] from application in application-akka.actor.default-dispatcher-20 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 22:58:46,187 [INFO] from application in application-akka.actor.default-dispatcher-22 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 22:58:46,187 [INFO] from application in application-akka.actor.default-dispatcher-22 - Loading model 1
-2017-11-16 22:58:46,252 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:46,253 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:46,254 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:46,254 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 22:58:46,293 [INFO] from application in application-akka.actor.default-dispatcher-22 - Similarity Service Successfully Initialized!!!
-2017-11-16 22:58:46,300 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 22:58:46,301 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 22:58:46,301 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 22:58:46,302 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 22:58:46,302 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 22:58:46,302 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 22:58:46,302 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 22:58:46,302 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 22:58:46,302 [INFO] from application in application-akka.actor.default-dispatcher-3 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:00:02,346 [INFO] from application in application-akka.actor.default-dispatcher-24 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:00:02,346 [INFO] from application in application-akka.actor.default-dispatcher-24 - Loading model 1
-2017-11-16 23:00:02,399 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-24 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:02,400 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-24 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:02,410 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-24 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:02,411 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-24 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:02,442 [INFO] from application in application-akka.actor.default-dispatcher-24 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:00:02,453 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:00:02,456 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:00:02,456 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:00:02,456 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:00:02,457 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:00:02,457 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:00:02,457 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:00:02,457 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:00:02,457 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:00:28,092 [INFO] from application in application-akka.actor.default-dispatcher-21 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:00:28,092 [INFO] from application in application-akka.actor.default-dispatcher-21 - Loading model 1
-2017-11-16 23:00:28,149 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:28,150 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:28,151 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:28,152 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:00:28,191 [INFO] from application in application-akka.actor.default-dispatcher-21 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:00:28,199 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:00:28,205 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:00:28,205 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:00:28,205 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:00:28,205 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:00:28,206 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:00:28,207 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:00:28,207 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:00:28,207 [INFO] from application in application-akka.actor.default-dispatcher-25 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:01:03,245 [INFO] from application in application-akka.actor.default-dispatcher-27 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:01:03,245 [INFO] from application in application-akka.actor.default-dispatcher-27 - Loading model 1
-2017-11-16 23:01:03,295 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:03,296 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:03,299 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:03,299 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:03,334 [INFO] from application in application-akka.actor.default-dispatcher-27 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:01:03,344 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:01:03,345 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:01:03,347 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:01:03,347 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:01:03,348 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:01:03,348 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:01:03,350 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:01:03,351 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:01:03,351 [INFO] from application in application-akka.actor.default-dispatcher-27 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:01:32,814 [INFO] from application in application-akka.actor.default-dispatcher-30 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:01:32,814 [INFO] from application in application-akka.actor.default-dispatcher-30 - Loading model 1
-2017-11-16 23:01:32,868 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-30 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:32,868 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-30 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:32,872 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-30 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:32,872 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-30 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:32,914 [INFO] from application in application-akka.actor.default-dispatcher-30 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:01:32,930 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:01:32,931 [INFO] from application in application-akka.actor.default-dispatcher-32 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:01:58,420 [INFO] from application in application-akka.actor.default-dispatcher-21 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:01:58,420 [INFO] from application in application-akka.actor.default-dispatcher-21 - Loading model 1
-2017-11-16 23:01:58,489 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:58,489 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:58,491 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:58,491 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-21 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:01:58,527 [INFO] from application in application-akka.actor.default-dispatcher-21 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:01:58,535 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:01:58,536 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:01:58,536 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:01:58,537 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:01:58,537 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:01:58,537 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:01:58,537 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:01:58,537 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:01:58,537 [INFO] from application in application-akka.actor.default-dispatcher-34 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:04:54,081 [INFO] from application in application-akka.actor.default-dispatcher-35 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:04:54,081 [INFO] from application in application-akka.actor.default-dispatcher-35 - Loading model 1
-2017-11-16 23:04:54,134 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-35 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:04:54,136 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-35 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:04:54,138 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-35 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:04:54,141 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-35 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:04:54,189 [INFO] from application in application-akka.actor.default-dispatcher-35 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:04:54,197 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:04:54,198 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:04:54,198 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:04:54,199 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:04:54,199 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:04:54,199 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:04:54,199 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:04:54,199 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:04:54,199 [INFO] from application in application-akka.actor.default-dispatcher-37 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:37:47,956 [INFO] from application in application-akka.actor.default-dispatcher-38 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:37:47,956 [INFO] from application in application-akka.actor.default-dispatcher-38 - Loading model 1
-2017-11-16 23:37:48,010 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:37:48,010 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:37:48,016 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:37:48,016 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:37:48,047 [INFO] from application in application-akka.actor.default-dispatcher-38 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:37:48,064 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:37:48,075 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:37:48,075 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:37:48,077 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:37:48,077 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:37:48,077 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:37:48,078 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:37:48,078 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:37:48,078 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:37:48,078 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:37:48,078 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:37:48,078 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:37:48,079 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:37:48,079 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:37:48,079 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:42:35,942 [INFO] from application in application-akka.actor.default-dispatcher-41 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:42:35,943 [INFO] from application in application-akka.actor.default-dispatcher-41 - Loading model 1
-2017-11-16 23:42:35,979 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:42:35,980 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:42:35,985 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:42:35,986 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:42:36,027 [INFO] from application in application-akka.actor.default-dispatcher-41 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:42:36,042 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:42:36,043 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:42:36,043 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:42:36,044 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:42:36,045 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:42:36,045 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:42:36,045 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:42:36,045 [INFO] from application in application-akka.actor.default-dispatcher-41 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:43:03,595 [INFO] from application in application-akka.actor.default-dispatcher-31 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:43:03,595 [INFO] from application in application-akka.actor.default-dispatcher-31 - Loading model 1
-2017-11-16 23:43:03,645 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:03,645 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:03,648 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:03,648 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:03,684 [INFO] from application in application-akka.actor.default-dispatcher-31 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:43:03,700 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:43:03,700 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:43:03,700 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:43:03,701 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:43:26,094 [INFO] from application in application-akka.actor.default-dispatcher-42 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:43:26,094 [INFO] from application in application-akka.actor.default-dispatcher-42 - Loading model 1
-2017-11-16 23:43:26,155 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-42 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:26,155 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-42 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:26,157 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-42 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:26,157 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-42 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:43:26,187 [INFO] from application in application-akka.actor.default-dispatcher-42 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:43:26,203 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:43:26,206 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:43:26,206 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:43:26,207 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:43:26,208 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:43:26,208 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:43:26,208 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:43:26,208 [INFO] from application in application-akka.actor.default-dispatcher-46 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:44:17,869 [INFO] from application in application-akka.actor.default-dispatcher-48 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:44:17,869 [INFO] from application in application-akka.actor.default-dispatcher-48 - Loading model 1
-2017-11-16 23:44:17,906 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-48 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:44:17,907 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-48 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:44:17,908 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-48 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:44:17,911 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-48 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:44:17,944 [INFO] from application in application-akka.actor.default-dispatcher-48 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:44:17,951 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:44:17,952 [INFO] from application in application-akka.actor.default-dispatcher-48 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:45:25,821 [INFO] from application in application-akka.actor.default-dispatcher-51 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:45:25,821 [INFO] from application in application-akka.actor.default-dispatcher-51 - Loading model 1
-2017-11-16 23:45:25,868 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-51 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:45:25,868 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-51 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:45:25,869 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-51 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:45:25,869 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-51 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:45:25,896 [INFO] from application in application-akka.actor.default-dispatcher-51 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:45:25,907 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:45:25,908 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:45:25,909 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:45:25,909 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:45:25,909 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:45:25,909 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:45:25,909 [INFO] from application in application-akka.actor.default-dispatcher-53 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:46:43,752 [INFO] from application in application-akka.actor.default-dispatcher-54 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:46:43,752 [INFO] from application in application-akka.actor.default-dispatcher-54 - Loading model 1
-2017-11-16 23:46:43,791 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-54 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:43,791 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-54 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:43,796 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-54 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:43,798 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-54 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:43,839 [INFO] from application in application-akka.actor.default-dispatcher-54 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:46:43,854 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:46:43,856 [INFO] from application in application-akka.actor.default-dispatcher-56 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:46:56,746 [INFO] from application in application-akka.actor.default-dispatcher-45 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:46:56,746 [INFO] from application in application-akka.actor.default-dispatcher-45 - Loading model 1
-2017-11-16 23:46:56,777 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-45 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:56,779 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-45 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:56,780 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-45 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:56,780 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-45 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:46:56,823 [INFO] from application in application-akka.actor.default-dispatcher-45 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:46:56,830 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:46:56,830 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:46:56,830 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:46:56,830 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:46:56,831 [INFO] from application in application-akka.actor.default-dispatcher-45 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:48:25,770 [INFO] from application in application-akka.actor.default-dispatcher-58 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
-2017-11-16 23:48:25,770 [INFO] from application in application-akka.actor.default-dispatcher-58 - Loading model 1
-2017-11-16 23:48:25,799 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-58 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:48:25,799 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-58 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:48:25,812 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-58 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:48:25,812 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-58 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
-2017-11-16 23:48:25,848 [INFO] from application in application-akka.actor.default-dispatcher-58 - Similarity Service Successfully Initialized!!!
-2017-11-16 23:48:25,855 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/01
-2017-11-16 23:48:25,856 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation4
-2017-11-16 23:48:25,856 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/C0014869 and http://iasis/vocab/annotation3
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation4
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/annotation3
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/01
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/01
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/01
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation4
-2017-11-16 23:48:25,857 [INFO] from application in application-akka.actor.default-dispatcher-60 - Computing gades similarity for http://iasis/vocab/annotation1-1 and http://iasis/vocab/annotation3
+2017-11-19 18:11:21,334 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-11-19T17:11:21.329Z.
+2017-11-19 18:11:21,349 [WARN] from application in ForkJoinPool-1-worker-1 - No models configured!!! Similarity service will not work
+2017-11-19 18:11:21,538 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-11-19 18:11:21,584 [INFO] from application in application-akka.actor.default-dispatcher-7 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-19 18:11:21,584 [INFO] from application in application-akka.actor.default-dispatcher-7 - Loading model 1
+2017-11-19 18:11:21,906 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:11:21,907 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:11:21,950 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:11:21,951 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-7 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:11:22,295 [INFO] from application in application-akka.actor.default-dispatcher-7 - Similarity Service Successfully Initialized!!!
+2017-11-19 18:11:22,500 [INFO] from application in application-akka.actor.default-dispatcher-5 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
+2017-11-19 18:11:22,510 [INFO] from application in application-akka.actor.default-dispatcher-5 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
+2017-11-19 18:11:22,510 [INFO] from application in application-akka.actor.default-dispatcher-5 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
+2017-11-19 18:11:22,510 [INFO] from application in application-akka.actor.default-dispatcher-5 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
+2017-11-19 18:14:12,976 [INFO] from application in application-akka.actor.default-dispatcher-8 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-19 18:14:12,976 [INFO] from application in application-akka.actor.default-dispatcher-8 - Loading model 1
+2017-11-19 18:14:13,048 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-8 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:14:13,048 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-8 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:14:13,050 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-8 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:14:13,050 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-8 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:14:13,097 [INFO] from application in application-akka.actor.default-dispatcher-8 - Similarity Service Successfully Initialized!!!
+2017-11-19 18:14:13,105 [INFO] from application in application-akka.actor.default-dispatcher-10 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
+2017-11-19 18:14:13,106 [INFO] from application in application-akka.actor.default-dispatcher-10 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
+2017-11-19 18:14:13,106 [INFO] from application in application-akka.actor.default-dispatcher-10 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
+2017-11-19 18:14:13,106 [INFO] from application in application-akka.actor.default-dispatcher-10 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
+2017-11-19 18:16:20,961 [INFO] from application in application-akka.actor.default-dispatcher-11 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-19 18:16:20,961 [INFO] from application in application-akka.actor.default-dispatcher-11 - Loading model 1
+2017-11-19 18:16:21,024 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-11 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:21,027 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-11 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:21,029 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-11 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:21,029 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-11 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:21,069 [INFO] from application in application-akka.actor.default-dispatcher-11 - Similarity Service Successfully Initialized!!!
+2017-11-19 18:16:24,221 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
+2017-11-19 18:16:24,221 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
+2017-11-19 18:16:24,222 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
+2017-11-19 18:16:24,222 [INFO] from application in application-akka.actor.default-dispatcher-11 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
+2017-11-19 18:16:49,439 [INFO] from application in application-akka.actor.default-dispatcher-13 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-19 18:16:49,439 [INFO] from application in application-akka.actor.default-dispatcher-13 - Loading model 1
+2017-11-19 18:16:49,495 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:49,496 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:49,497 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:49,501 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:16:49,539 [INFO] from application in application-akka.actor.default-dispatcher-13 - Similarity Service Successfully Initialized!!!
+2017-11-19 18:16:49,562 [INFO] from application in application-akka.actor.default-dispatcher-15 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
+2017-11-19 18:16:49,563 [INFO] from application in application-akka.actor.default-dispatcher-15 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
+2017-11-19 18:16:49,563 [INFO] from application in application-akka.actor.default-dispatcher-15 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
+2017-11-19 18:16:49,563 [INFO] from application in application-akka.actor.default-dispatcher-15 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
+2017-11-19 18:17:01,008 [INFO] from application in application-akka.actor.default-dispatcher-13 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-19 18:17:01,008 [INFO] from application in application-akka.actor.default-dispatcher-13 - Loading model 1
+2017-11-19 18:17:01,056 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:17:01,057 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:17:01,068 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:17:01,069 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-13 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-19 18:17:01,113 [INFO] from application in application-akka.actor.default-dispatcher-13 - Similarity Service Successfully Initialized!!!
+2017-11-19 18:17:01,135 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
+2017-11-19 18:17:01,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
+2017-11-19 18:17:01,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
+2017-11-19 18:17:01,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3

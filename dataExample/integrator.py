@@ -6,11 +6,28 @@ import json
 import os.path
 import sys, getopt
 
-def getPredicateObject(subjects, graph, index):
+# parser rdfs
+
+# sameas ontology
+
+# Class analyzer 
+
+allJoins = []
+
+def getPredicateObject(subjects, graph, index, name_class, class_identifier):
 
 	mergeDict = []
 
 	for s in subjects:
+
+		success = False
+		for o in graph.objects(subject=s, predicate=class_identifier):
+			if str(o)==name_class:
+				success = True
+
+		if not success:
+			continue
+		
 		dict_new = {}
 		dict_new['head'] = {}
 		dict_new['head']['index'] = index
@@ -53,9 +70,72 @@ def getSubject(subjects, graph, toJoin, uri):
 	return newGraph
 
 
+def getUnusedNodes(subjects, subjects2, g, g2, toJoin, F):
+	toSearch = getSubject(subjects, g, toJoin, 'uri1')
+	toSearch2 = getSubject(subjects2, g2, toJoin, 'uri2')
+
+	toSearch = toSearch.serialize(format='nt')
+	toSearch2 = toSearch2.serialize(format='nt')
+
+	if len(toSearch) > 1:
+		F.write(toSearch[:-1])
+
+	if len(toSearch2) > 1:
+		F.write(toSearch2[:-1])
+
+	return 0
+
+
+def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier):
+	mergeDict = []
+	mergeDict2 = []
+	index = 0
+
+	n += 1
+
+	threshold = float(config.get('Class'+str(n),'threshold'))
+	simfunction = config.get('Class'+str(n),'similarity_metric')
+	fusion_policy = config.get('Class'+str(n),'fusion_policy')
+	name_class = config.get('Class'+str(n),'class')
+
+	mergeDict = getPredicateObject(subjects, g, index, name_class, class_identifier)
+	mergeDict2 = getPredicateObject(subjects2, g2, index, name_class, class_identifier)
+
+	perfectOp = MFuhsionPerfect(threshold, simfunction)
+
+	perfectOp.execute_new(mergeDict, mergeDict2)
+	toJoin = []
+	for tpl in perfectOp.toBeJoined:
+		tupl = {}
+		tupl['uri1'] = str(tpl[0])
+		tupl['uri2'] = str(tpl[1])
+		toJoin.append(tupl)
+
+	global allJoins
+
+	allJoins += toJoin
+
+	for elem in toJoin:
+		elem['uri1'] = elem['uri1'].replace('<','').replace('>','')
+		elem['uri2'] = elem['uri2'].replace('<','').replace('>','')
+
+	jsonToJoin = {}
+	jsonToJoin["tasks"] = toJoin
+	
+	headers = {'content-type': "application/json"}
+	url = "http://localhost:9001/fusion/"+fusion_policy
+	data = jsonToJoin
+	data = json.dumps(data)
+	response = requests.post(url, data=data, headers=headers)
+	resp_object = response.text
+
+	F.write(resp_object)
+
+
 def integrator(config_file):
 	config = ConfigParser.ConfigParser()
 	config.read(config_file)
+	
 	save_path = config.get('RDFData','pathToSave')
 	completeName = os.path.join(save_path, "new_rdfGraph.nt")         
 
@@ -79,6 +159,8 @@ def integrator(config_file):
 	for subject,predicate,obj in g:
 	    subjects.append(subject)
 	    predicates.append(predicate)
+	    if 'https://www.w3.org/1999/02/22-rdf-syntax-ns#/type' == str(predicate):
+	    	class_identifier = predicate
 	    objects.append(obj)
 
 	for subject,predicate,obj in g2:
@@ -89,65 +171,23 @@ def integrator(config_file):
 	subjects = list(set(subjects))
 	subjects2 = list(set(subjects2))
 
-	mergeDict = []
-	mergeDict2 = []
-	index = 0
-
-	threshold = float(config.get('Class','threshold'))
-	simfunction = config.get('Class','similarity_metric')
-	fusion_policy = config.get('Class','fusion_policy')
-
-	mergeDict = getPredicateObject(subjects, g, index)
-	mergeDict2 = getPredicateObject(subjects2, g2, index)
+	number_classes = int(config.get('RDFData','number_classes'))
 
 	url = "http://localhost:9000/similarity/initialize?model_1="+file_ontologies
 	headers = {'content-type': "application/json"}
-	response = requests.get(url, headers=headers)\
-
-	perfectOp = MFuhsionPerfect(threshold, simfunction)
-
-	perfectOp.execute_new(mergeDict, mergeDict2)
-	toJoin = []
-	for tpl in perfectOp.toBeJoined:
-		tupl = {}
-		tupl['uri1'] = str(tpl[0])
-		tupl['uri2'] = str(tpl[1])
-		toJoin.append(tupl)
-
-	toSearch = getSubject(subjects, g, toJoin, 'uri1')
-	toSearch2 = getSubject(subjects2, g2, toJoin, 'uri2')
-
-	toSearch = toSearch.serialize(format='nt')
-	toSearch2 = toSearch2.serialize(format='nt')
-
-	for elem in toJoin:
-		elem['uri1'] = elem['uri1'].replace('<','').replace('>','')
-		elem['uri2'] = elem['uri2'].replace('<','').replace('>','')
-
-	jsonToJoin = {}
-	jsonToJoin["tasks"] = toJoin
+	response = requests.get(url, headers=headers)
 
 	url = "http://localhost:9001/setlocation"
-	headers = {'content-type': "application/json"}
 	data = {"location1":file_name1, 
 		"location2":file_name2}
 	data = json.dumps(data)
 	response = requests.post(url, data=data, headers=headers)
-	print response
 
-	url = "http://localhost:9001/fusion/"+fusion_policy
-	data = jsonToJoin
-	data = json.dumps(data)
-	response = requests.post(url, data=data, headers=headers)
-	resp_object = response.text
+	for n in range(number_classes):
+		integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier)
 
-	if len(toSearch) > 1:
-		F.write(toSearch[:-1])
+	getUnusedNodes(subjects, subjects2, g, g2, allJoins, F)
 
-	if len(toSearch2) > 1:
-		F.write(toSearch2[:-1])
-
-	F.write(resp_object)
 	F.close()
 
 
