@@ -14,6 +14,31 @@ import sys, getopt
 
 allJoins = []
 
+def sameAsPolicy(toJoin, g, g2):
+	gNew = rdflib.Graph()
+	for elem in toJoin:
+		subject1 = rdflib.URIRef(elem['uri1'])
+		for node in g.predicate_objects(subject=subject1):
+			gNew.add((subject1, node[0], node[1]))
+
+		subject2 = rdflib.URIRef(elem['uri2'])
+		for node in g2.predicate_objects(subject=subject2):
+			gNew.add((subject2, node[0], node[1]))
+
+		gNew.add((subject1, rdflib.URIRef('https://www.w3.org/2002/07/owl#/sameAs') ,subject2))
+
+	return (gNew.serialize(format='nt'))[:-1]
+
+
+def unionPolicy(fusion_policy, jsonToJoin):
+	headers = {'content-type': "application/json"}
+	url = "http://localhost:9001/fusion/"+fusion_policy
+	data = jsonToJoin
+	data = json.dumps(data)
+	response = requests.post(url, data=data, headers=headers)
+	return response.text
+
+
 def getPredicateObject(subjects, graph, index, name_class, class_identifier):
 
 	mergeDict = []
@@ -121,13 +146,13 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 
 	jsonToJoin = {}
 	jsonToJoin["tasks"] = toJoin
-	
-	headers = {'content-type': "application/json"}
-	url = "http://localhost:9001/fusion/"+fusion_policy
-	data = jsonToJoin
-	data = json.dumps(data)
-	response = requests.post(url, data=data, headers=headers)
-	resp_object = response.text
+
+	if fusion_policy == 'union':
+		resp_object = unionPolicy(fusion_policy, jsonToJoin)
+	elif fusion_policy == 'sameAs':
+		resp_object = sameAsPolicy(toJoin, g, g2)
+	else:
+		resp_object = []
 
 	F.write(resp_object)
 

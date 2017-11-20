@@ -56,3 +56,95 @@
 2017-11-19 18:17:01,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
 2017-11-19 18:17:01,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
 2017-11-19 18:17:01,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
+2017-11-20 14:58:49,340 [INFO] from application in application-akka.actor.default-dispatcher-17 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 14:58:49,340 [INFO] from application in application-akka.actor.default-dispatcher-17 - Loading model 1
+2017-11-20 14:58:49,397 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:58:49,397 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:58:49,399 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:58:49,399 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-17 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:58:49,434 [INFO] from application in application-akka.actor.default-dispatcher-17 - Similarity Service Successfully Initialized!!!
+2017-11-20 14:58:49,470 [INFO] from application in application-akka.actor.default-dispatcher-17 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 14:59:18,488 [INFO] from application in application-akka.actor.default-dispatcher-12 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 14:59:18,488 [INFO] from application in application-akka.actor.default-dispatcher-12 - Loading model 1
+2017-11-20 14:59:18,557 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-12 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:18,558 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-12 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:18,559 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-12 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:18,560 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-12 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:18,600 [INFO] from application in application-akka.actor.default-dispatcher-12 - Similarity Service Successfully Initialized!!!
+2017-11-20 14:59:18,626 [INFO] from application in application-akka.actor.default-dispatcher-21 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 14:59:45,875 [INFO] from application in application-akka.actor.default-dispatcher-18 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 14:59:45,875 [INFO] from application in application-akka.actor.default-dispatcher-18 - Loading model 1
+2017-11-20 14:59:45,939 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-18 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:45,940 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-18 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:45,941 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-18 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:45,941 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-18 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 14:59:45,981 [INFO] from application in application-akka.actor.default-dispatcher-18 - Similarity Service Successfully Initialized!!!
+2017-11-20 14:59:46,001 [INFO] from application in application-akka.actor.default-dispatcher-18 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:00:09,730 [INFO] from application in application-akka.actor.default-dispatcher-20 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:00:09,730 [INFO] from application in application-akka.actor.default-dispatcher-20 - Loading model 1
+2017-11-20 15:00:09,785 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:09,785 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:09,788 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:09,789 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-20 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:09,832 [INFO] from application in application-akka.actor.default-dispatcher-20 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:00:09,865 [INFO] from application in application-akka.actor.default-dispatcher-24 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:00:52,223 [INFO] from application in application-akka.actor.default-dispatcher-26 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:00:52,223 [INFO] from application in application-akka.actor.default-dispatcher-26 - Loading model 1
+2017-11-20 15:00:52,266 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-26 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:52,266 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-26 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:52,268 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-26 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:52,269 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-26 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:00:52,327 [INFO] from application in application-akka.actor.default-dispatcher-26 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:00:52,358 [INFO] from application in application-akka.actor.default-dispatcher-26 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:01:19,576 [INFO] from application in application-akka.actor.default-dispatcher-27 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:01:19,576 [INFO] from application in application-akka.actor.default-dispatcher-27 - Loading model 1
+2017-11-20 15:01:19,611 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:01:19,612 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:01:19,615 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:01:19,616 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-27 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:01:19,667 [INFO] from application in application-akka.actor.default-dispatcher-27 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:01:19,697 [INFO] from application in application-akka.actor.default-dispatcher-29 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:03:44,672 [INFO] from application in application-akka.actor.default-dispatcher-31 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:03:44,672 [INFO] from application in application-akka.actor.default-dispatcher-31 - Loading model 1
+2017-11-20 15:03:44,708 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:03:44,708 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:03:44,710 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:03:44,710 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-31 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:03:44,750 [INFO] from application in application-akka.actor.default-dispatcher-31 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:03:44,791 [INFO] from application in application-akka.actor.default-dispatcher-31 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:04:44,207 [INFO] from application in application-akka.actor.default-dispatcher-34 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:04:44,209 [INFO] from application in application-akka.actor.default-dispatcher-34 - Loading model 1
+2017-11-20 15:04:44,249 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-34 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:44,250 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-34 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:44,253 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-34 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:44,254 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-34 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:44,296 [INFO] from application in application-akka.actor.default-dispatcher-34 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:04:44,328 [INFO] from application in application-akka.actor.default-dispatcher-35 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:04:59,337 [INFO] from application in application-akka.actor.default-dispatcher-22 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:04:59,337 [INFO] from application in application-akka.actor.default-dispatcher-22 - Loading model 1
+2017-11-20 15:04:59,364 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:59,365 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:59,366 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:59,369 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-22 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:04:59,428 [INFO] from application in application-akka.actor.default-dispatcher-22 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:04:59,462 [INFO] from application in application-akka.actor.default-dispatcher-22 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:05:42,600 [INFO] from application in application-akka.actor.default-dispatcher-38 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:05:42,600 [INFO] from application in application-akka.actor.default-dispatcher-38 - Loading model 1
+2017-11-20 15:05:42,644 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:05:42,645 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:05:42,650 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:05:42,652 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-38 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:05:42,694 [INFO] from application in application-akka.actor.default-dispatcher-38 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:05:42,720 [INFO] from application in application-akka.actor.default-dispatcher-39 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:06:22,548 [INFO] from application in application-akka.actor.default-dispatcher-41 - Initializing models with values /home/roa/internship/rdf_integrator/dataExample/testMerge.nt and None
+2017-11-20 15:06:22,549 [INFO] from application in application-akka.actor.default-dispatcher-41 - Loading model 1
+2017-11-20 15:06:22,571 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:06:22,572 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:06:22,573 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:06:22,573 [WARN] from org.semanticweb.owlapi.util.SAXParsers in application-akka.actor.default-dispatcher-41 - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl
+2017-11-20 15:06:22,630 [INFO] from application in application-akka.actor.default-dispatcher-41 - Similarity Service Successfully Initialized!!!
+2017-11-20 15:06:22,655 [INFO] from application in application-akka.actor.default-dispatcher-43 - Computing gades similarity for http://iasis/vocab/28381756 and http://iasis/vocab/01
+2017-11-20 15:06:22,666 [INFO] from application in application-akka.actor.default-dispatcher-43 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation4
+2017-11-20 15:06:22,667 [INFO] from application in application-akka.actor.default-dispatcher-43 - Computing gades similarity for http://iasis/vocab/annotation1 and http://iasis/vocab/annotation3
+2017-11-20 15:06:22,667 [INFO] from application in application-akka.actor.default-dispatcher-43 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation4
+2017-11-20 15:06:22,667 [INFO] from application in application-akka.actor.default-dispatcher-43 - Computing gades similarity for http://iasis/vocab/annotation2 and http://iasis/vocab/annotation3
