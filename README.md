@@ -107,11 +107,26 @@ rdf1 = /Absolute/path/to/file.nt
 rdf2 = /Absolute/path/to/file2.nt
 ontology = /Absolute/path/to/file3.nt
 pathToSave = /Path/to/save/the/output
+number_classes = N
 
-[Class]
+[Class1]
+class = http://iasis/vocab/Publication
 similarity_metric = gades
+threshold = 0.8
+fusion_policy = sameAs
+
+[Class2]
+class = http://iasis/vocab/LCannotationtation
+similarity_metric = jaccard
 threshold = 0.8
 fusion_policy = union
 
+...
+
+[ClassN]
+class = http://iasis/vocab/Test
+similarity_metric = gades
+threshold = 0.5
+fusion_policy = sameAs
 
 ```
