@@ -1,5 +1,5 @@
-New log file opened at Sun Nov 19 18:14:05 CET 2017 by 384@yroa
-jvm 384@yroa
+New log file opened at Thu Dec 07 16:58:12 CET 2017 by 3509@yroa
+jvm 3509@yroa
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.151-b12
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]

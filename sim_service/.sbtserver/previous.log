@@ -1,4 +1,4 @@
-New log file opened at Sun Nov 19 18:11:15 CET 2017 by 32405@yroa
+New log file opened at Thu Dec 07 16:55:20 CET 2017 by 3057@yroa
 == resolving dependencies net.sourceforge.owlapi#owlapi-distribution;4.1.3->org.openrdf.sesame#sesame-rio-binary;2.7.12 [compile->master(compile)]
 == resolving dependencies net.sourceforge.owlapi#owlapi-distribution;4.1.3->org.openrdf.sesame#sesame-rio-binary;2.7.12 [compile->compile(*)]
 == resolving dependencies org.openrdf.sesame#sesame-rio-binary;2.7.12->org.openrdf.sesame#sesame-model;2.7.12 [compile->master(compile)]
@@ -2148,7 +2148,7 @@ all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-:: resolution report :: resolve 2077ms :: artifacts dl 38ms
+:: resolution report :: resolve 2412ms :: artifacts dl 66ms
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT compile produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-compile.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT runtime produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-runtime.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT test produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-test.xml
@@ -2163,7 +2163,7 @@ all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT pom produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-pom.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT scala-tool produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-scala-tool.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT fork-run produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-fork-run.xml
-	resolve done (2077ms resolve - 38ms download)
+	resolve done (2412ms resolve - 66ms download)
 Read from stdout: Done updating.
 Done updating.
 Read from stdout: There may be incompatibilities among your library dependencies.
@@ -2174,18 +2174,18 @@ Read from stdout: 	* net.sourceforge.owlapi:owlapi-distribution:(3.5.0, 3.5.1) -
 	* net.sourceforge.owlapi:owlapi-distribution:(3.5.0, 3.5.1) -> 4.1.3
 Read from stdout: Run 'evicted' to see detailed eviction warnings
 Run 'evicted' to see detailed eviction warnings
-Total time: 2 s, completed Nov 19, 2017 6:11:16 PM
+Total time: 3 s, completed Dec 7, 2017 4:55:21 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
 Running task... Cancel: sbt.server.ServerTaskCancellation@49154f7d, check cycles: false
-Total time: 0 s, completed Nov 19, 2017 6:11:17 PM
+Total time: 0 s, completed Dec 7, 2017 4:55:22 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/roa/internship/rdf_integrator/sim_service/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6ad01c4b, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5bed397a, check cycles: false
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
 
 Initial source changes: 
@@ -2207,7 +2207,7 @@ Copy resource mappings:
 	(/home/roa/internship/rdf_integrator/sim_service/conf/application.conf,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/application.conf)
 	(/home/roa/internship/rdf_integrator/sim_service/conf/logback.xml,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/logback.xml)
 	(/home/roa/internship/rdf_integrator/sim_service/conf/routes,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Nov 19, 2017 6:11:20 PM
+Total time: 1 s, completed Dec 7, 2017 4:57:59 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -2216,4 +2216,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 32405@yroa logs at Sun Nov 19 18:14:00 CET 2017, goodbye.
+Closing the 3057@yroa logs at Thu Dec 07 16:58:07 CET 2017, goodbye.

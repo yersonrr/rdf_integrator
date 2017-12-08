@@ -5,6 +5,7 @@ import requests
 import json
 import os.path
 import sys, getopt
+import  fileinput
 
 # parser rdfs
 
@@ -13,6 +14,7 @@ import sys, getopt
 # Class analyzer 
 
 allJoins = []
+mergedMolecules = []
 
 def sameAsPolicy(toJoin, g, g2):
 	gNew = rdflib.Graph()
@@ -144,18 +146,29 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 		elem['uri1'] = elem['uri1'].replace('<','').replace('>','')
 		elem['uri2'] = elem['uri2'].replace('<','').replace('>','')
 
-	jsonToJoin = {}
-	jsonToJoin["tasks"] = toJoin
+	for elemToJoin in toJoin:
+		jsonToJoin = {}
+		jsonToJoin["tasks"] = [elemToJoin]
 
-	if fusion_policy == 'union':
-		resp_object = unionPolicy(fusion_policy, jsonToJoin)
-		resp_object = resp_object.replace('http://vocab.lidakra.de/fuhsen/search/merged_entity','http://iasis/vocab')
-	elif fusion_policy == 'sameAs':
-		resp_object = sameAsPolicy(toJoin, g, g2)
-	else:
-		resp_object = []
+		if fusion_policy == 'union':
+			mergedUris = {}
+			resp_object = unionPolicy(fusion_policy, jsonToJoin)
+			resp_object = resp_object.replace('http://vocab.lidakra.de/fuhsen/search/merged_entity','http://iasis/vocab')
+			subject = (resp_object.split())[0]
+			mergedUris['uri1'] = '<' + elemToJoin['uri1'] + '>'
+			mergedUris['uri2'] = '<' + elemToJoin['uri2'] + '>'
+			mergedUris['newUri'] = subject
 
-	F.write(resp_object)
+
+			global mergedMolecules
+			mergedMolecules.append(mergedUris)
+
+		elif fusion_policy == 'sameAs':
+			resp_object = sameAsPolicy(toJoin, g, g2)
+		else:
+			resp_object = []
+
+		F.write(resp_object)
 
 
 def integrator(config_file):
@@ -215,6 +228,27 @@ def integrator(config_file):
 	getUnusedNodes(subjects, subjects2, g, g2, allJoins, F)
 
 	F.close()
+
+	for line in fileinput.input(completeName, inplace=True):
+		global mergedMolecules
+		replace = False
+		for elem in mergedMolecules:
+			if (line.find(elem['uri1']) > 0):
+				print(line.replace(elem['uri1'],elem['newUri'])[:-1])
+				replace = True
+			elif (line.find(elem['uri2']) > 0):
+				print(line.replace(elem['uri2'],elem['newUri'])[:-1])
+				replace = True
+		if not (replace):
+			print(line[:-1])
+
+	g = rdflib.Graph()
+	result = g.parse(location=completeName, format="nt")
+
+	file = open(completeName, "w")
+	file.write(g.serialize(format='nt'))
+	file.close()
+
 
 
 def readConfig():

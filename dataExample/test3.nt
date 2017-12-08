@@ -4,6 +4,7 @@
 <http://iasis/vocab/01> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/annotation3>.
 <http://iasis/vocab/01> <http://iasis/vocab/has_mesh> <http://iasis/vocab/annotation4>.
 <http://iasis/vocab/annotation4> <https://www.w3.org/1999/02/22-rdf-syntax-ns#/type> <http://iasis/vocab/LCannotationtation>.
+<http://iasis/vocab/annotationbla> <http://iasis/vocab/mentioned_in> <http://iasis/vocab/01>.
 <http://iasis/vocab/annotation4> <http://iasis/vocab/id> <http://iasis/vocab/C0031149>.
 <http://iasis/vocab/annotation4> <http://iasis/vocab/annLabel> "Peritoneal Neoplasm".
 <http://iasis/vocab/annotation4> <http://iasis/vocab/source> <http://iasis/vocab/UMLS_CUI>.
