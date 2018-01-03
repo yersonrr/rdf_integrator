@@ -101,10 +101,20 @@ class MFuhsionPerfect:
             simmatrix[simmatrix < self.threshold] = 0
             # run hungarian algorithm
             cost_matrix = make_cost_matrix(simmatrix.tolist(), lambda cost: 1.0 - cost)
-            m = Munkres()
-            perfect_indices = m.compute(cost_matrix)
-            for a,b in perfect_indices:
-                self.toBeJoined.append((left_table[a], right_table[b]))
+
+            compute = False
+            for sim_row in simmatrix:
+                for sim_elem in sim_row:
+                    if sim_elem != 0:
+                        compute = True 
+                        break
+
+            if compute:            
+                m = Munkres()
+                perfect_indices = m.compute(cost_matrix)
+
+                for a,b in perfect_indices:
+                    self.toBeJoined.append((left_table[a], right_table[b]))
 
     def sim(self, uri1, uri2):
         url = "http://localhost:9000/similarity/"+self.simfunction

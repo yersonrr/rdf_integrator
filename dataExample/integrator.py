@@ -1,17 +1,12 @@
 import rdflib
 from mFuhsionPerfect import MFuhsionPerfect
+from mFuhsion import MFuhsion
 import ConfigParser
 import requests
 import json
 import os.path
 import sys, getopt
 import  fileinput
-
-# parser rdfs
-
-# sameas ontology
-
-# Class analyzer 
 
 allJoins = []
 mergedMolecules = []
@@ -77,6 +72,7 @@ def getPredicateObject(subjects, graph, index, name_class, class_identifier):
 
 def getSubject(subjects, graph, toJoin, uri):
 
+	belong = False
 	newGraph = rdflib.Graph()
 	for subject in subjects:
 		for tj in toJoin:
@@ -198,7 +194,7 @@ def integrator(config_file):
 	for subject,predicate,obj in g:
 	    subjects.append(subject)
 	    predicates.append(predicate)
-	    if 'https://www.w3.org/1999/02/22-rdf-syntax-ns#/type' == str(predicate):
+	    if 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' == str(predicate):
 	    	class_identifier = predicate
 	    objects.append(obj)
 
@@ -248,7 +244,6 @@ def integrator(config_file):
 	file = open(completeName, "w")
 	file.write(g.serialize(format='nt'))
 	file.close()
-
 
 
 def readConfig():
