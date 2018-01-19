@@ -1,7 +1,6 @@
 import rdflib
 from mFuhsionPerfect import MFuhsionPerfect
-from mFuhsion import MFuhsion
-import ConfigParser
+import configparser
 import requests
 import json
 import os.path
@@ -11,7 +10,7 @@ import  fileinput
 allJoins = []
 mergedMolecules = []
 
-def sameAsPolicy(toJoin, g, g2):
+def uriPolicy(toJoin, g, g2, fusion_policy):
 	gNew = rdflib.Graph()
 	for elem in toJoin:
 		subject1 = rdflib.URIRef(elem['uri1'])
@@ -22,7 +21,7 @@ def sameAsPolicy(toJoin, g, g2):
 		for node in g2.predicate_objects(subject=subject2):
 			gNew.add((subject2, node[0], node[1]))
 
-		gNew.add((subject1, rdflib.URIRef('https://www.w3.org/2002/07/owl#/sameAs') ,subject2))
+		gNew.add((subject1, rdflib.URIRef(fusion_policy) ,subject2))
 
 	return (gNew.serialize(format='nt'))[:-1]
 
@@ -97,14 +96,24 @@ def getUnusedNodes(subjects, subjects2, g, g2, toJoin, F):
 	toSearch = getSubject(subjects, g, toJoin, 'uri1')
 	toSearch2 = getSubject(subjects2, g2, toJoin, 'uri2')
 
-	toSearch = toSearch.serialize(format='nt')
-	toSearch2 = toSearch2.serialize(format='nt')
+	len_toSearch = toSearch.serialize(format='nt')
+	len_toSearch2 = toSearch2.serialize(format='nt')
 
-	if len(toSearch) > 1:
-		F.write(toSearch[:-1])
+	if len(len_toSearch) > 1:
+		for s,p,o in toSearch:
+			elem = s.n3() + ' '
+			elem += p.n3() + ' '
+			obj = o.n3().replace('"', '\"')
+			elem += obj + '.\n'
+			F.write(elem)
 
-	if len(toSearch2) > 1:
-		F.write(toSearch2[:-1])
+	if len(len_toSearch2) > 1:
+		for s,p,o in toSearch2:
+			elem = s.n3() + ' '
+			elem += p.n3() + ' '
+			obj = o.n3().replace('"', '\"')
+			elem += obj + '.\n'
+			F.write(elem)
 
 	return 0
 
@@ -159,16 +168,16 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 			global mergedMolecules
 			mergedMolecules.append(mergedUris)
 
-		elif fusion_policy == 'sameAs':
-			resp_object = sameAsPolicy(toJoin, g, g2)
+		elif fusion_policy != '':
+			resp_object = uriPolicy(toJoin, g, g2, fusion_policy)
 		else:
 			resp_object = []
 
-		F.write(resp_object)
+		F.write(resp_object.decode('utf-8'))
 
 
 def integrator(config_file):
-	config = ConfigParser.ConfigParser()
+	config = configparser.ConfigParser()
 	config.read(config_file)
 	
 	save_path = config.get('RDFData','pathToSave')
@@ -208,7 +217,27 @@ def integrator(config_file):
 
 	number_classes = int(config.get('RDFData','number_classes'))
 
-	url = "http://localhost:9000/similarity/initialize?model_1="+file_ontologies
+	FileAux = open('auxFile.nt', 'w+')
+
+	f = open(file_ontologies, 'r')
+	for line in f.readlines():
+		FileAux.write(line)
+	f.close()
+
+	f = open(file_name1, 'r')
+	for line in f.readlines():
+		FileAux.write(line)
+	f.close()
+
+	f = open(file_name2, 'r')
+	for line in f.readlines():
+		FileAux.write(line)
+	f.close()
+	FileAux.close()
+
+	ontology_path = os.path.realpath(FileAux.name)
+
+	url = "http://localhost:9000/similarity/initialize?model_1="+ontology_path
 	headers = {'content-type': "application/json"}
 	response = requests.get(url, headers=headers)
 
@@ -242,7 +271,13 @@ def integrator(config_file):
 	result = g.parse(location=completeName, format="nt")
 
 	file = open(completeName, "w")
-	file.write(g.serialize(format='nt'))
+	for s,p,o in g:
+			elem = s.n3() + ' '
+			elem += p.n3() + ' '
+			obj = o.n3().replace('"', '\"')
+			elem += obj + '.\n'
+			file.write(elem)
+	
 	file.close()
 
 

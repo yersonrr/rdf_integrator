@@ -8,9 +8,9 @@ import json
 import sys
 import numpy as np
 import ujson
+from importlib import reload
 
 reload(sys)
-sys.setdefaultencoding("utf-8")
 
 class MFuhsionPerfect:
 
@@ -68,20 +68,27 @@ class MFuhsionPerfect:
             # simmatrix = [[0 for i in xrange(len(right_table))] for j in xrange(len(left_table))]
             simmatrix = np.zeros((len(left_table), len(right_table)), float)
 
-            # for i in xrange(len(left_table)):
-            #     for j in xrange(len(right_table)):
-            #         start_sim_time = time()
-            #
-            #         simscore = self.sim(left_table[i],right_table[j])
-            #
-            #         finish_sim_time = time()
-            #         self.total_sim_time += finish_sim_time - start_sim_time
-            #
-            #         if simscore >= self.threshold:
-            #             simmatrix[i][j] = simscore
-            start_sim_time = time()
-            for i in xrange(0,len(left_table),self.batchSize):
-                for j in xrange(0, len(right_table), self.batchSize):
+
+            """i = 0
+            while i < len(left_table):
+                j = 0
+                while j < len(right_table):
+                    start_sim_time = time()
+                    simscore = self.sim(left_table[i],right_table[j])
+                    finish_sim_time = time()
+                    self.total_sim_time += finish_sim_time - start_sim_time
+                    if simscore >= self.threshold:
+                        print (simscore)
+                        simmatrix[i][j] = simscore
+                    j += 1
+                i += 1
+            """
+            #start_sim_time = time()
+            
+            i = 0
+            while i < len(left_table):
+                j = 0
+                while j < len(right_table):
                     if i+self.batchSize<=len(left_table) and j+self.batchSize<=len(right_table):
                         add_matrix = self.sim_batch(left_table[i:i+self.batchSize],right_table[j:j+self.batchSize])
                         simmatrix[i:i+self.batchSize, j:j+self.batchSize] = add_matrix
@@ -94,12 +101,16 @@ class MFuhsionPerfect:
                     else:
                         add_matrix = self.sim_batch(left_table[i:len(left_table)], right_table[j:len(right_table)])
                         simmatrix[i:len(left_table), j:len(right_table)] = add_matrix
-            finish_sim_time = time()
-            self.total_sim_time += finish_sim_time - start_sim_time
-
+                    j += self.batchSize
+                i += self.batchSize
+            #finish_sim_time = time()
+            #self.total_sim_time += finish_sim_time - start_sim_time
             # pruning
-            simmatrix[simmatrix < self.threshold] = 0
+            simmatrix[simmatrix <= self.threshold] = 0
+
             # run hungarian algorithm
+            
+            """
             cost_matrix = make_cost_matrix(simmatrix.tolist(), lambda cost: 1.0 - cost)
 
             compute = False
@@ -115,33 +126,66 @@ class MFuhsionPerfect:
 
                 for a,b in perfect_indices:
                     self.toBeJoined.append((left_table[a], right_table[b]))
+            """
+
+            for i in range(len(simmatrix)):
+                compare_elem_i = -1
+                compare_elem_j = -1
+                max_elem = 0
+                for j in range(len(simmatrix[i])):
+
+                    if simmatrix[i][j] >= self.threshold and simmatrix[i][j] > max_elem:
+                        compare_elem_i = i
+                        compare_elem_j = j
+                        max_elem = simmatrix[i][j]
+
+                if compare_elem_i != -1:
+                    self.toBeJoined.append((left_table[compare_elem_i], right_table[compare_elem_j]))
+
 
     def sim(self, uri1, uri2):
         url = "http://localhost:9000/similarity/"+self.simfunction
-        data = {"tasks": [{"uri1": uri1[1:-1], "uri2": uri2[1:-1]}]}
+        data = {"tasks": [{"uri1": uri1.replace('<','').replace('>',''), "uri2": uri2.replace('<','').replace('>','')}]}
         headers = {'content-type': "application/json"}
-        response = requests.post(url, data=json.dumps(data), headers=headers)
+        json_data = json.dumps(data, ensure_ascii=False)
+        json_data = json_data.encode('utf-8')
+        found = False
+        response = requests.post(url, json_data, headers=headers)
         resp_object = json.loads(response.text)
         return resp_object[0]["value"]
+
 
     def sim_batch(self, list_uris1, list_uris2):
         url = "http://localhost:9000/similarity/" + self.simfunction+"?minimal=true"
         headers = {'content-type': "application/json"}
         data = {"tasks": []}
-        for i in xrange(len(list_uris1)):
-            for j in xrange(len(list_uris2)):
-                data["tasks"].append({"uri1":list_uris1[i][1:-1], "uri2":list_uris2[j][1:-1]})
+        for i in range(len(list_uris1)):
+            for j in range(len(list_uris2)):
+                data["tasks"].append({"uri1":list_uris1[i].replace('<','').replace('>',''), "uri2":list_uris2[j].replace('<','').replace('>','')})
         # print json.dumps(data, ensure_ascii=False)
-        response = requests.post(url, data=json.dumps(data, ensure_ascii=False), headers=headers)
-        resp_object = ujson.loads(response.text)
+        json_data = json.dumps(data, ensure_ascii=False)
+        json_data = json_data.encode('utf-8')
+        found = False
+        i = 0
+        while not found:
+            response = requests.post(url, data=json_data, headers=headers)
+            try:
+                resp_object = ujson.loads(response.text)
+                found = True
+            except:
+                i += 1
+                if i == 9:
+                    break
+                print('not valid JSON')
+                pass
         # results = [[0 for k in xrange(self.batchSize)] for l in xrange(self.batchSize)]
         results = np.zeros((len(list_uris1),len(list_uris2)), float)
         i = 0
-        for k in xrange(len(resp_object)):
+        for k in range(len(resp_object)):
             j = k % len(list_uris2)
             results[i][j] = resp_object[k]['value']
             i = i if (j < len(list_uris2)-1) else i+1
-            
+
         return results
 
     # def execute(self, rtl1, rtl2):
