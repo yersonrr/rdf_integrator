@@ -1,5 +1,5 @@
-New log file opened at Thu Dec 07 16:58:12 CET 2017 by 3509@yroa
-jvm 3509@yroa
+New log file opened at Thu Jan 25 11:59:15 CET 2018 by 24624@yroa
+jvm 24624@yroa
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.151-b12
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/roa/internship/rdf_integrator/sim_service/project, returning: (sim_service-build)
 Loading project definition from /home/roa/internship/rdf_integrator/sim_service/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@76a59784, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@19919104, check cycles: false
 
 Initial source changes: 
 	removed:Set()

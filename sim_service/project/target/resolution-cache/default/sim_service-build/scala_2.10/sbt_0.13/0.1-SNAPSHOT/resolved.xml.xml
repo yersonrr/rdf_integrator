@@ -4,7 +4,7 @@
 		module="sim_service-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171207165509"
+		publication="20180125115613"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

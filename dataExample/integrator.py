@@ -158,7 +158,7 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 		if fusion_policy == 'union':
 			mergedUris = {}
 			resp_object = unionPolicy(fusion_policy, jsonToJoin)
-			resp_object = resp_object.replace('http://vocab.lidakra.de/fuhsen/search/merged_entity','http://iasis/vocab')
+			resp_object = resp_object.replace('http://vocab.lidakra.de/fuhsen/search/merged_entity/','http://project-iasis.eu/')
 			subject = (resp_object.split())[0]
 			mergedUris['uri1'] = '<' + elemToJoin['uri1'] + '>'
 			mergedUris['uri2'] = '<' + elemToJoin['uri2'] + '>'
