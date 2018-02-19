@@ -1,0 +1,5 @@
+<http://project-iasis.eu/vocab/ADAnnotation> <https://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Disease> .
+<http://project-iasis.eu/vocab/annLabel> <https://www.w3.org/2000/01/rdf-schema#sameAs> <https://www.w3.org/2000/01/rdf-schema#label> .
+<http://project-iasis.eu/vocab/LCAnnotation> <https://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Disease> .
+<http://project-iasis.eu/vocab/ADAnnotation> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/ontology/Disease> .
+<http://project-iasis.eu/vocab/LCAnnotation> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/ontology/Disease> .

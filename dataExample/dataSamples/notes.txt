@@ -1,0 +1,40 @@
+
+....INTEGRATOR.....
+
+First INTEGRATION =
+ADSAMPLEDATAWP4CO      9097
+ADSAMPLEDATAWP4DSL     1982 
+                                Total 11079  
+
+Second Integration =
+
+                  -160 repeat triples
+first / fst.nt    10919
+ADSAMPLEDATADSP    9080
+				                Total 19999
+
+
+Third Integration =
+                    -228 repeat triples
+second / snd.nt      19771
+LCSAMPLEDATACO        8880
+                               Total  28651
+
+Fourth Integration =
+                      0 repeat triples
+third / trd.nt      28651             
+LCSAMPLEDATADSL      3812
+                               Total 32463
+
+Fifth INTEGRATION =
+                    
+                     -304 repeat triples
+fourth   / fth.nt   32159            
+LCSAMPLEDATADSP      8596
+					           Total 40755
+
+                        -556 repeat triples
+fifth_integration.nt   40199
+
+
+Total repeat triples = 1248

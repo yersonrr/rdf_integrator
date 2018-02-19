@@ -106,6 +106,7 @@ class MFuhsionPerfect:
             #finish_sim_time = time()
             #self.total_sim_time += finish_sim_time - start_sim_time
             # pruning
+            print(simmatrix)
             simmatrix[simmatrix <= self.threshold] = 0
 
             # run hungarian algorithm

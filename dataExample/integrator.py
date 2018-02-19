@@ -10,6 +10,8 @@ import  fileinput
 allJoins = []
 mergedMolecules = []
 
+# When the Class use an URI as a Fusion Policy the Elements to Join will be
+# joined by the predicate URI.
 def uriPolicy(toJoin, g, g2, fusion_policy):
 	gNew = rdflib.Graph()
 	for elem in toJoin:
@@ -147,6 +149,9 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 
 	allJoins += toJoin
 
+	if(name_class == 'http://project-iasis.eu/vocab/Publication'):
+		print(toJoin)
+
 	for elem in toJoin:
 		elem['uri1'] = elem['uri1'].replace('<','').replace('>','')
 		elem['uri2'] = elem['uri2'].replace('<','').replace('>','')
@@ -173,7 +178,7 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 		else:
 			resp_object = []
 
-		F.write(resp_object.decode('utf-8'))
+		F.write(resp_object)
 
 
 def integrator(config_file):

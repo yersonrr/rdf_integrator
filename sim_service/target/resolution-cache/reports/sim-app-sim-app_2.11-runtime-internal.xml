@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20180125115625"/>
+		date="20180213133445"/>
 	<dependencies>
 		<module organisation="dk.brics.automaton" name="automaton">
 			<revision name="1.11-8" status="release" pubdate="20111204160457" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.brics.dk/automaton/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="113">
