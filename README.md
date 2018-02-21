@@ -130,3 +130,63 @@ threshold = 0.5
 fusion_policy = sameAs
 
 ```
+
+# RDF Interlinking
+
+* Set the RDF Graph to interlink with the endpoints, the ontology and the path to save the result in **dataExample/config2.ini** and run the following command in the same folder.
+
+```
+python3 interlinking.py -c config2.ini
+```
+
+The example write the result in the path specified in config2.ini with the name "new_rdfGraph2.nt".
+
+The config2.ini must have the following structure, and must be in the same directory as the interlinking.py script:
+
+```
+
+[RDFData]
+rdf = /Absolute/path/to/file.nt-
+ontology = /Absolute/path/to/file3.nt
+pathToSave = /Path/to/save/the/output
+number_kg = N
+
+[KG1]
+endpoint = https://dbpedia.org/sparql
+similary_metric = part
+threshold = 0.8
+fusion_policy = https://www.w3.org/2000/01/rdf-schema#sameAs
+class1 = http://project-iasis.eu/vocab/ADAnnotation
+class2 = http://dbpedia.org/class/yago/BrainDisorder114085708
+ontologyKG = /home/roa/internship/rdf_integrator/dataExample/dataSamples/dbpediaOntologies.nt
+mapping = /home/roa/internship/rdf_integrator/dataExample/dataSamples/mappings.nt
+predicate_to_compare = M
+
+[KG1_P1]
+predicate1 = http://project-iasis.eu/vocab/annLabel
+predicate2 = http://www.w3.org/2000/01/rdf-schema#label
+
+...
+
+[KG1_PM]
+predicate1 = http://project-iasis.eu/vocab/PREDICATE_EXAMPLE
+predicate2 = http://www.w3.org/2000/01/rdf-schema#PREDICATE_EXAMPLE
+
+...
+
+[KGN]
+endpoint = https://dbpedia.org/sparql
+similary_metric = part
+threshold = 0.8
+fusion_policy = https://www.w3.org/2000/01/rdf-schema#sameAs
+class1 = http://project-iasis.eu/vocab/ADAnnotation
+class2 = http://dbpedia.org/class/yago/BrainDisorder114085708
+ontologyKG = /home/roa/internship/rdf_integrator/dataExample/dataSamples/dbpediaOntologies.nt
+mapping = /home/roa/internship/rdf_integrator/dataExample/dataSamples/mappings.nt
+predicate_to_compare = 1
+
+[KGN_P1]
+predicate1 = http://project-iasis.eu/vocab/annLabel
+predicate2 = http://www.w3.org/2000/01/rdf-schema#label
+
+```
