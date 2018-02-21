@@ -8,9 +8,11 @@ import json
 from mFuhsionPerfect import MFuhsionPerfect
 import urllib
 from difflib import SequenceMatcher
-
+import sys, getopt
+import  fileinput
 
 allJoins = []
+mergedMolecules = []
 
 def fuhsionPolicy(toJoin, g, molecule, predicate):
 	gNew = rdflib.Graph()
@@ -300,7 +302,6 @@ def searchByEndpoint(graph, n, config):
 				mergedUris['uri2'] = '<' + elemToJoin['uri2'] + '>'
 				mergedUris['newUri'] = subject
 
-				global mergedMolecules
 				mergedMolecules.append(mergedUris)
 
 			elif fusion_policy != '':
@@ -311,21 +312,53 @@ def searchByEndpoint(graph, n, config):
 			Finterlink.write(resp_object.decode("utf-8"))
 
 	Finterlink.close()
-	return ntriples
 
-	"""graph = rdflib.Graph()
-	elem = graph.parse(format='n3', data=results)
+	save_path = config.get('RDFData','pathToSave')
+	completeName = os.path.join(save_path, "new_rdfGraph2.nt")
+
+	file = open(completeName, "w")
+	for s,p,o in graph:
+			elem = s.n3() + ' '
+			elem += p.n3() + ' '
+			obj = o.n3().replace('"', '\"')
+			elem += obj + '.\n'
+			file.write(elem)
+
+	g=rdflib.Graph()
+	g.parse(location='interlink_prueba.nt', format="nt")
+
+	for s,p,o in g:
+			elem = s.n3() + ' '
+			elem += p.n3() + ' '
+			obj = o.n3().replace('"', '\"')
+			elem += obj + '.\n'
+			file.write(elem)
+	file.close()
+
+	for line in fileinput.input(completeName, inplace=True):
+		replace = False
+		for elem in mergedMolecules:
+			if (line.find(elem['uri1']) > 0):
+				print(line.replace(elem['uri1'],elem['newUri'])[:-1])
+				replace = True
+			elif (line.find(elem['uri2']) > 0):
+				print(line.replace(elem['uri2'],elem['newUri'])[:-1])
+				replace = True
+		if not (replace):
+			print(line[:-1])
 	
-	for s,p,o in elem:
-		print s
-		print p 
-		print o
+	g = rdflib.Graph()
+	result = g.parse(location=completeName, format="nt")
 
-
-	F = open('exampledata.nt', "w")
-	F.write(elem.serialize(format='nt'))
-	F.close()"""
-
+	file = open(completeName, "w")
+	for s,p,o in g:
+			elem = s.n3() + ' '
+			elem += p.n3() + ' '
+			obj = o.n3().replace('"', '\"')
+			elem += obj + '.\n'
+			file.write(elem)
+	file.close()
+	return
 
 def interlinking(config_file):
 	config = configparser.ConfigParser()
@@ -333,14 +366,19 @@ def interlinking(config_file):
 	
 	file_name1 = config.get('RDFData','rdf')
 	number_kg = int(config.get('RDFData','number_kg'))
-	
+	save_path = config.get('RDFData','pathToSave')
+	completeName = os.path.join(save_path, "new_rdfGraph.nt")
+
 	g=rdflib.Graph()
 	g.parse(location=file_name1, format="nt")
 
-	for n in range(number_kg):
-		searchByEndpoint(g, n, config)
+	global mergedMolecules
 
-	#F.close()
+	for n in range(number_kg):
+		if n > 0:		
+			g=rdflib.Graph()
+			g.parse(location=completeName, format="nt")
+		searchByEndpoint(g, n, config)
 
 
 def readConfig():

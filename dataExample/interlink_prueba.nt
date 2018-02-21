@@ -1,111 +1,111 @@
-<http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/annLabel> "Fatal Familial Insomnia" .
-<http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0206042> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Fatal_familial_insomnia> .
-<http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0206042> .
 <http://project-iasis.eu/Annotation/ADannotationC0206042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 <http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0206042c0162534> .
+<http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/annLabel> "Fatal Familial Insomnia" .
+<http://project-iasis.eu/Annotation/ADannotationC0206042> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Fatal_familial_insomnia> .
+<http://project-iasis.eu/Annotation/ADannotationC0206042> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0206042> .
 
-<http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0270612> .
+<http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/mentionedin28679849c0270612> .
+<http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/Annotation/ADannotationC0270612> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Leukoencephalopathy> .
 <http://project-iasis.eu/Annotation/ADannotationC0270612> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/mentionedin28679849c0270612> .
+<http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0270612> .
 <http://project-iasis.eu/Annotation/ADannotationC0270612> <http://project-iasis.eu/vocab/annLabel> "Leukoencephalopathies" .
 
 <http://project-iasis.eu/Annotation/ADannotationC0742115> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0742115c0085584> .
+<http://project-iasis.eu/Annotation/ADannotationC0742115> <http://project-iasis.eu/vocab/annLabel> "Cerebritis" .
 <http://project-iasis.eu/Annotation/ADannotationC0742115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 <http://project-iasis.eu/Annotation/ADannotationC0742115> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Cerebritis> .
-<http://project-iasis.eu/Annotation/ADannotationC0742115> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/Annotation/ADannotationC0742115> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0742115> .
-<http://project-iasis.eu/Annotation/ADannotationC0742115> <http://project-iasis.eu/vocab/annLabel> "Cerebritis" .
+<http://project-iasis.eu/Annotation/ADannotationC0742115> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 
+<http://project-iasis.eu/Annotation/ADannotationC0022336> <http://project-iasis.eu/vocab/annLabel> "Creutzfeldt-Jakob disease" .
 <http://project-iasis.eu/Annotation/ADannotationC0022336> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0022336c0162534> .
 <http://project-iasis.eu/Annotation/ADannotationC0022336> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0022336> <http://project-iasis.eu/vocab/annLabel> "Creutzfeldt-Jakob disease" .
-<http://project-iasis.eu/Annotation/ADannotationC0022336> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0022336> .
 <http://project-iasis.eu/Annotation/ADannotationC0022336> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/Annotation/ADannotationC0022336> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Creutzfeldt\u2013Jakob_disease> .
+<http://project-iasis.eu/Annotation/ADannotationC0022336> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0022336> .
 
+<http://project-iasis.eu/Annotation/ADannotationC0043121> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0043121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0043121> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0043121> .
 <http://project-iasis.eu/Annotation/ADannotationC0043121> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Wernicke's_encephalopathy> .
 <http://project-iasis.eu/Annotation/ADannotationC0043121> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0043121c0085584> .
 <http://project-iasis.eu/Annotation/ADannotationC0043121> <http://project-iasis.eu/vocab/annLabel> "Wernicke Encephalopathy" .
-<http://project-iasis.eu/Annotation/ADannotationC0043121> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0043121> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0043121> .
-<http://project-iasis.eu/Annotation/ADannotationC0043121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 
 <http://project-iasis.eu/Annotation/ADannotationC0019151> <http://project-iasis.eu/vocab/annLabel> "Hepatic Encephalopathy" .
-<http://project-iasis.eu/Annotation/ADannotationC0019151> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0019151c0085584> .
-<http://project-iasis.eu/Annotation/ADannotationC0019151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0019151> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0019151> .
 <http://project-iasis.eu/Annotation/ADannotationC0019151> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/Annotation/ADannotationC0019151> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Hepatic_encephalopathy> .
+<http://project-iasis.eu/Annotation/ADannotationC0019151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0019151> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0019151> .
+<http://project-iasis.eu/Annotation/ADannotationC0019151> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0019151c0085584> .
 
-<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0014068> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Cerebral_softening> .
-<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0014068c0085584> .
-<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/annLabel> "Encephalomalacia" .
 <http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0014068> .
+<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/annLabel> "Encephalomalacia" .
+<http://project-iasis.eu/Annotation/ADannotationC0014068> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0014068c0085584> .
+<http://project-iasis.eu/Annotation/ADannotationC0014068> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Cerebral_softening> .
 
-<http://project-iasis.eu/Annotation/ADannotationC0027873> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Neuromyelitis_optica> .
-<http://project-iasis.eu/Annotation/ADannotationC0027873> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0027873c0007682> .
-<http://project-iasis.eu/Annotation/ADannotationC0027873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0027873> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0027873> .
 <http://project-iasis.eu/Annotation/ADannotationC0027873> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/Annotation/ADannotationC0027873> <http://project-iasis.eu/vocab/annLabel> "Neuromyelitis Optica" .
+<http://project-iasis.eu/Annotation/ADannotationC0027873> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0027873c0007682> .
+<http://project-iasis.eu/Annotation/ADannotationC0027873> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Neuromyelitis_optica> .
+<http://project-iasis.eu/Annotation/ADannotationC0027873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0027873> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0027873> .
 
 <http://project-iasis.eu/Annotation/ADannotationC0028968> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0028968> .
-<http://project-iasis.eu/Annotation/ADannotationC0028968> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0028968> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Olivopontocerebellar_atrophy> .
-<http://project-iasis.eu/Annotation/ADannotationC0028968> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0028968> <http://project-iasis.eu/vocab/annLabel> "Olivopontocerebellar Atrophies" .
 <http://project-iasis.eu/Annotation/ADannotationC0028968> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0028968c1285162> .
+<http://project-iasis.eu/Annotation/ADannotationC0028968> <http://project-iasis.eu/vocab/annLabel> "Olivopontocerebellar Atrophies" .
+<http://project-iasis.eu/Annotation/ADannotationC0028968> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0028968> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0028968> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Olivopontocerebellar_atrophy> .
 
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0002395c0012634> .
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0002395> .
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/hasmesh28806278c0002395> .
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/mentionedin28806278c0002395> .
 <http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Alzheimer's_disease> .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/hasmesh28784822c0002395> .
 <http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/hasmesh28802038c0002395> .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0002395> .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/annLabel> "Alzheimer's Disease" .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/mentionedin28806278c0002395> .
 <http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/hasmesh28837496c0002395> .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/hasmesh28806278c0002395> .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0002395c0012634> .
-<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/annLabel> "Alzheimer's Disease" .
 <http://project-iasis.eu/4e486b8f-676d-4c6c-a8a5-b4dfc30f635b> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/augmentsc0002395c0012634> .
 
 <http://project-iasis.eu/Annotation/ADannotationC0022802> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Kuru_(disease)> .
-<http://project-iasis.eu/Annotation/ADannotationC0022802> <http://project-iasis.eu/vocab/annLabel> "Kuru" .
-<http://project-iasis.eu/Annotation/ADannotationC0022802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0022802> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0022802> .
 <http://project-iasis.eu/Annotation/ADannotationC0022802> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0022802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 <http://project-iasis.eu/Annotation/ADannotationC0022802> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0022802c0162534> .
+<http://project-iasis.eu/Annotation/ADannotationC0022802> <http://project-iasis.eu/vocab/annLabel> "Kuru" .
+<http://project-iasis.eu/Annotation/ADannotationC0022802> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0022802> .
 
-<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0027577> .
-<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/annLabel> "Nelson Syndrome" .
 <http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0027577c0001614> .
-<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 <http://project-iasis.eu/Annotation/ADannotationC0027577> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Nelson's_syndrome> .
+<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/annLabel> "Nelson Syndrome" .
+<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0027577> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0027577> .
 
-<http://project-iasis.eu/Annotation/ADannotationC0023787> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0023787> .
+<http://project-iasis.eu/Annotation/ADannotationC0023787> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Leukodystrophy> .
+<http://project-iasis.eu/Annotation/ADannotationC0023787> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 <http://project-iasis.eu/Annotation/ADannotationC0023787> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0023787c0037277> .
 <http://project-iasis.eu/Annotation/ADannotationC0023787> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 <http://project-iasis.eu/Annotation/ADannotationC0023787> <http://project-iasis.eu/vocab/annLabel> "Lipodystrophy" .
-<http://project-iasis.eu/Annotation/ADannotationC0023787> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0023787> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Leukodystrophy> .
+<http://project-iasis.eu/Annotation/ADannotationC0023787> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0023787> .
 
-<http://project-iasis.eu/Annotation/ADannotationC0338462> <http://project-iasis.eu/vocab/annLabel> "Semantic Dementia" .
-<http://project-iasis.eu/Annotation/ADannotationC0338462> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0338462> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
-<http://project-iasis.eu/Annotation/ADannotationC0338462> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Semantic_dementia> .
 <http://project-iasis.eu/Annotation/ADannotationC0338462> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/hasmesh28817800c0338462> .
+<http://project-iasis.eu/Annotation/ADannotationC0338462> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Semantic_dementia> .
+<http://project-iasis.eu/Annotation/ADannotationC0338462> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
+<http://project-iasis.eu/Annotation/ADannotationC0338462> <http://project-iasis.eu/vocab/annLabel> "Semantic Dementia" .
 <http://project-iasis.eu/Annotation/ADannotationC0338462> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0338462> .
+<http://project-iasis.eu/Annotation/ADannotationC0338462> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
 
 <http://project-iasis.eu/Annotation/ADannotationC0004782> <https://www.w3.org/2000/01/rdf-schema#sameAs> <http://dbpedia.org/resource/Basal_ganglia_disease> .
-<http://project-iasis.eu/Annotation/ADannotationC0004782> <http://project-iasis.eu/vocab/annLabel> "Basal Ganglia Diseases" .
-<http://project-iasis.eu/Annotation/ADannotationC0004782> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
-<http://project-iasis.eu/Annotation/ADannotationC0004782> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 <http://project-iasis.eu/Annotation/ADannotationC0004782> <http://project-iasis.eu/vocab/id> <http://project-iasis.eu/vocab/C0004782> .
+<http://project-iasis.eu/Annotation/ADannotationC0004782> <http://project-iasis.eu/vocab/source> <http://project-iasis.eu/vocab/UMLS_CUI> .
+<http://project-iasis.eu/Annotation/ADannotationC0004782> <http://project-iasis.eu/vocab/annLabel> "Basal Ganglia Diseases" .
 <http://project-iasis.eu/Annotation/ADannotationC0004782> <http://project-iasis.eu/vocab/hasAnnotation> <http://project-iasis.eu/Relation/isac0004782c0085584> .
+<http://project-iasis.eu/Annotation/ADannotationC0004782> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://project-iasis.eu/vocab/ADAnnotation> .
 
