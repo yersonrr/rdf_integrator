@@ -44,6 +44,10 @@ chmod a+x activator
 ./activator
 ```
 
+Depending on your operating system or linux distribution, you may need to adapt the command above. 
+For example, on Linux Mint 18.x, the path environment variable is configured in /etc/environment. 
+Hence, you can append ```:/opt/activator``` within ```PATH=""``` line.
+
 ### For merge_service you will need to run
 ```
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
@@ -51,6 +55,8 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89
 sudo apt-get update
 sudo apt-get install sbt 
 ```
+
+Change the current directory to your cloned sim_service directory.
 
 Second you need to run sim_service and merge_service using:
 
