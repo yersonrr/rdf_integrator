@@ -119,7 +119,7 @@ number_classes = N
 class = http://iasis/vocab/Publication
 similarity_metric = gades
 threshold = 0.8
-fusion_policy = sameAs
+fusion_policy = https://www.w3.org/2000/01/rdf-schema#sameAs
 
 [Class2]
 class = http://iasis/vocab/LCannotationtation
@@ -133,7 +133,7 @@ fusion_policy = union
 class = http://iasis/vocab/Test
 similarity_metric = gades
 threshold = 0.5
-fusion_policy = sameAs
+fusion_policy = https://www.w3.org/2000/01/rdf-schema#sameAs
 
 ```
 
