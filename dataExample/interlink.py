@@ -376,6 +376,7 @@ def interlinking(config_file):
 
 	for n in range(number_kg):
 		if n > 0:		
+			completeName = os.path.join(save_path, "new_rdfGraph2.nt")
 			g=rdflib.Graph()
 			g.parse(location=completeName, format="nt")
 		searchByEndpoint(g, n, config)

@@ -1,5 +1,5 @@
-New log file opened at Tue Feb 13 13:34:04 CET 2018 by 25092@yroa
-jvm 25092@yroa
+New log file opened at Tue Feb 27 14:51:46 CET 2018 by 4298@yroa
+jvm 4298@yroa
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.161-b12
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/roa/internship/rdf_integrator/sim_service/project, returning: (sim_service-build)
 Loading project definition from /home/roa/internship/rdf_integrator/sim_service/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@19919104, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@31f04dd4, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,7 +69,7 @@ Set current project to sim-app (in build file:/home/roa/internship/rdf_integrato
 > server-handle-next-server-request
 > {file:/home/roa/internship/rdf_integrator/sim_service/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@a5f6dd4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@17c78843, check cycles: false
 Read from stdout: Updating {file:/home/roa/internship/rdf_integrator/sim_service/}root...
 Updating {file:/home/roa/internship/rdf_integrator/sim_service/}root...
 Other repositories:
@@ -84,7 +84,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies sim-app#sim-app_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.7 ...
 Resolving org.scala-lang#scala-library;2.11.7 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e7536b7
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@774d2a8
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -11695,7 +11695,7 @@ all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-:: resolution report :: resolve 4053ms :: artifacts dl 103ms
+:: resolution report :: resolve 6753ms :: artifacts dl 112ms
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT compile produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-compile.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT runtime produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-runtime.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT test produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-test.xml
@@ -11710,7 +11710,7 @@ all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT pom produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-pom.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT scala-tool produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-scala-tool.xml
 	report for sim-app#sim-app_2.11;1.0-SNAPSHOT fork-run produced in /home/roa/internship/rdf_integrator/sim_service/target/resolution-cache/reports/sim-app-sim-app_2.11-fork-run.xml
-	resolve done (4053ms resolve - 103ms download)
+	resolve done (6753ms resolve - 112ms download)
 Read from stdout: Done updating.
 Done updating.
 Read from stdout: There may be incompatibilities among your library dependencies.
@@ -11721,18 +11721,18 @@ Read from stdout: 	* net.sourceforge.owlapi:owlapi-distribution:(3.5.0, 3.5.1) -
 	* net.sourceforge.owlapi:owlapi-distribution:(3.5.0, 3.5.1) -> 4.1.3
 Read from stdout: Run 'evicted' to see detailed eviction warnings
 Run 'evicted' to see detailed eviction warnings
-Total time: 5 s, completed Feb 13, 2018 1:34:50 PM
+Total time: 8 s, completed Feb 27, 2018 2:52:18 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@52a2c3ad, check cycles: false
-Total time: 0 s, completed Feb 13, 2018 1:34:51 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@f721e01, check cycles: false
+Total time: 0 s, completed Feb 27, 2018 2:52:19 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/roa/internship/rdf_integrator/sim_service/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7b66171c, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b5707be, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -11753,7 +11753,7 @@ Copy resource mappings:
 	(/home/roa/internship/rdf_integrator/sim_service/conf/application.conf,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/application.conf)
 	(/home/roa/internship/rdf_integrator/sim_service/conf/logback.xml,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/logback.xml)
 	(/home/roa/internship/rdf_integrator/sim_service/conf/routes,/home/roa/internship/rdf_integrator/sim_service/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 13, 2018 1:35:32 PM
+Total time: 2 s, completed Feb 27, 2018 2:52:25 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -11762,4 +11762,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 25092@yroa logs at Tue Feb 13 13:37:45 CET 2018, goodbye.
+Closing the 4298@yroa logs at Tue Feb 27 14:58:10 CET 2018, goodbye.

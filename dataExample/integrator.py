@@ -6,6 +6,7 @@ import json
 import os.path
 import sys, getopt
 import  fileinput
+from difflib import SequenceMatcher
 
 allJoins = []
 mergedMolecules = []
@@ -69,6 +70,52 @@ def getPredicateObject(subjects, graph, index, name_class, class_identifier):
 		mergeDict.append(dict_new)
 
 	return mergeDict
+
+
+def similarValue(a,b):
+	return SequenceMatcher(None, a, b).ratio()
+
+
+def similarityPart(config, graph, gNew, subject, class_identifier, class1, n, threshold):
+	predicate2compare = int(config.get('KG'+str(n), 'predicate_to_compare'))
+	ratio = 0
+	subjects_Graph = graph.subjects(predicate=rdflib.URIRef(class_identifier),object=rdflib.URIRef(class1))
+
+	sim_dicc = {}
+	for k in range(predicate2compare):
+		for subject1 in subjects_Graph:
+			predicate1 = config.get('KG'+str(n)+'_P'+str(k+1), 'predicate1')
+			predicate2 = config.get('KG'+str(n)+'_P'+str(k+1), 'predicate2')
+			objects1 = graph.objects(subject=subject1, predicate=rdflib.URIRef(predicate1))
+			objects2 = gNew.objects(subject=rdflib.URIRef(subject),predicate=rdflib.URIRef(predicate2))
+			maxim = 0
+			for obj1 in objects1:
+				for obj2 in objects2:
+					val = similarValue(obj1, obj2)
+					if (val > maxim and val > threshold):
+						maxim = val
+
+			if(maxim > 0):
+				try:
+					sim_dicc[subject1] += maxim*1.0/predicate2compare
+				except:
+					sim_dicc[subject1] = maxim*1.0/predicate2compare
+
+	maxi = 0
+	subject_maxim = ''
+	for elem in sim_dicc:
+		if (maxi < sim_dicc[elem] and sim_dicc[elem] > threshold):
+			maxi = sim_dicc[elem]
+			subject_maxim = elem
+
+	toJoin = []
+	if maxi > 0:
+		tupl = {}
+		tupl['uri1'] = subject_maxim
+		tupl['uri2'] = str(subject)
+		toJoin.append(tupl)
+
+	return toJoin
 
 
 def getSubject(subjects, graph, toJoin, uri):
@@ -163,7 +210,7 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 		if fusion_policy == 'union':
 			mergedUris = {}
 			resp_object = unionPolicy(fusion_policy, jsonToJoin)
-			resp_object = resp_object.replace('http://vocab.lidakra.de/fuhsen/search/merged_entity/','http://project-iasis.eu/')
+			resp_object = resp_object.replace('http://vocab.lidakra.de/fuhsen/search/merged_entity/132131321','http://project-iasis.eu/')
 			subject = (resp_object.split())[0]
 			mergedUris['uri1'] = '<' + elemToJoin['uri1'] + '>'
 			mergedUris['uri2'] = '<' + elemToJoin['uri2'] + '>'
@@ -178,7 +225,10 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 		else:
 			resp_object = []
 
-		F.write(resp_object)
+		try:
+			F.write(resp_object.decode("utf-8"))
+		except:
+			F.write(resp_object)
 
 
 def integrator(config_file):
