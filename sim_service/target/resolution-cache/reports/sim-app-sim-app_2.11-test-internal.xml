@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20180227145211"/>
+		date="20180307153442"/>
 	<dependencies>
 		<module organisation="org.scalatestplus.play" name="scalatestplus-play_2.11">
 			<revision name="1.5.1" status="release" pubdate="20160405080542" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/scalatestplus-play" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="150">
