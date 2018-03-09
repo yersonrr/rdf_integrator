@@ -85,9 +85,9 @@ def similarityPart(config, g, g2, class_identifier, class1, n, threshold):
 
 	for subject2 in subjects_Graph2:
 		sim_dicc = {}
-		subjects_Graph = g.subjects(predicate=rdflib.URIRef(class_identifier),object=rdflib.URIRef(class1))
 
 		for k in range(predicate2compare):
+			subjects_Graph = g.subjects(predicate=rdflib.URIRef(class_identifier),object=rdflib.URIRef(class1))
 			for subject1 in subjects_Graph:
 
 				predicate1 = config.get('Class'+str(n)+'_P'+str(k+1), 'predicate1')
