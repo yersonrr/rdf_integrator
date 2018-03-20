@@ -7,6 +7,7 @@ import os.path
 import sys, getopt
 import  fileinput
 from difflib import SequenceMatcher
+import random
 
 allJoins = []
 mergedMolecules = []
@@ -241,6 +242,44 @@ def integratePerClass(g, g2, subjects, subjects2, n, F, config, class_identifier
 			F.write(resp_object)
 
 
+def newData():
+	node = {
+      "data" : {
+        "id" : "0",
+        "selected" : False,
+        "cytoscape_alias_list" : [ "Vacherin Haut-Rive" ],
+        "canonicalName" : "Vacherin Haut-Rive",
+        "SUID" : 0,
+        "NodeType" : "WhiteWine",
+        "name" : "Vacherin Haut-Rive",
+        "shared_name" : "Vacherin Haut-Rive"
+      },
+      "position" : {
+        "x" : 0,
+        "y" : 3980.036865234375
+      },
+      "selected" : False
+    }
+
+	edge = {
+      "data" : {
+        "id" : "0",
+        "source" : "0",
+        "target" : "0",
+        "selected" : False,
+        "canonicalName" : "Aarauer Bierdeckel (cc) Bergues",
+        "SUID" : 0,
+        "name" : "Aarauer Bierdeckel (cc) Bergues",
+        "interaction" : "cc",
+        "shared_interaction" : "cc",
+        "shared_name" : "Aarauer Bierdeckel (cc) Bergues"
+      },
+      "selected" : False
+    }
+
+	return (node, edge)
+
+
 def integrator(config_file):
 	config = configparser.ConfigParser()
 	config.read(config_file)
@@ -344,6 +383,183 @@ def integrator(config_file):
 			file.write(elem)
 	
 	file.close()
+
+	g=rdflib.Graph()
+	result1 = g.parse(location=file_name1, format="nt")
+	g2 = rdflib.Graph()
+	result2 = g2.parse(location=file_name2, format="nt")
+	jsonData = {
+		"format_version" : "1.0",
+	 	"generated_by" : "cytoscape-3.2.0",
+	  	"target_cytoscapejs_version" : "~2.1",
+	  	"data" : {
+		    "selected" : True,
+		    "__Annotations" : [],
+		    "shared_name" : "WineCheeseNetwork",
+		    "SUID" : 52,
+		    "name" : "WineCheeseNetwork"
+	  	},
+	  	"elements" : {
+	  		"nodes":[],
+	  		"edges":[],
+	  	}
+  	}
+
+	idGraph = 53
+
+	node, edge = newData()
+
+    # Uri 1    1391 RedWine
+    # Uri 2    6593 WhiteWine
+	y = 2130
+
+	for elem in allJoins:
+		uri1 = elem['uri1']
+		uri2 = elem['uri2']
+
+		node["data"]["id"] = str(idGraph)
+		node["SUID"] = idGraph
+		node["data"]["NodeType"] = "RedWine"
+		node["data"]["cytoscape_alias_list"] = [uri1]
+		node["data"]["canonicalName"] = uri1
+		node["data"]["name"] = uri1
+		node["data"]["shared_name"] = uri1
+
+		node["position"]["x"] = 1391
+		node["position"]["y"] = y
+
+		jsonData["elements"]["nodes"].append(node)
+		idGraph += 1
+
+		node, edge = newData()
+
+		node["data"]["id"] = str(idGraph)
+		node["SUID"] = idGraph
+		node["data"]["NodeType"] = "WhiteWine"
+		node["data"]["cytoscape_alias_list"] = [uri2]
+		node["data"]["canonicalName"] = uri2
+		node["data"]["name"] = uri2
+		node["data"]["shared_name"] = uri2
+
+		node["position"]["x"] = 6593
+		node["position"]["y"] = y
+
+		y += 49
+		jsonData["elements"]["nodes"].append(node)
+		idGraph += 1
+
+		node, edge = newData()
+
+		node["data"]["id"] = str(idGraph)
+		node["SUID"] = idGraph
+		node["data"]["NodeType"] = "Cheese"
+		node["data"]["cytoscape_alias_list"] = ['Relation']
+		node["data"]["canonicalName"] = 'Relation'
+		node["data"]["name"] = 'Relation'
+		node["data"]["shared_name"] = 'Relation'
+
+		node["position"]["x"] = random.randint(1400, 6550)
+		node["position"]["y"] = random.randint(2130, 6550)
+
+		jsonData["elements"]["nodes"].append(node)
+		
+		idGraph += 1 
+
+		source = idGraph - 3
+		target = idGraph - 2
+
+		connection = idGraph - 1
+
+		node, edge = newData()
+
+		edge['data']['id'] = str(idGraph)
+		edge['data']['source'] = str(source)
+		edge['data']['target'] = str(connection)
+		edge['data']['cannonicalName'] = uri1 + ' (cc) Connection'
+		edge['data']['SUID'] = idGraph
+		edge['data']['name'] = uri1 + ' (cc) Connection'
+		edge['data']['shared_name'] = uri1 + ' (cc) Connection'
+		jsonData["elements"]["edges"].append(edge)
+	
+		idGraph += 1
+
+		node, edge = newData()
+
+		edge['data']['id'] = str(idGraph)
+		edge['data']['source'] = str(target)
+		edge['data']['target'] = str(connection)
+		edge['data']['cannonicalName'] = uri2 + ' (cc) Connection'
+		edge['data']['SUID'] = idGraph
+		edge['data']['name'] = uri2 + ' (cc) Connection'
+		edge['data']['shared_name'] = uri2 + ' (cc) Connection'
+		jsonData["elements"]["edges"].append(edge)
+
+		idGraph += 1
+
+		#Connections Uri1
+		subject = rdflib.URIRef(uri1)
+		subject2 = rdflib.URIRef(uri2)
+
+		for data in g.predicate_objects(subject=subject):
+			node, edge = newData()
+
+			node["data"]["id"] = str(idGraph)
+			node["SUID"] = idGraph
+			node["data"]["NodeType"] = "Cheese"
+			node["data"]["cytoscape_alias_list"] = [data[1].n3()]
+			node["data"]["canonicalName"] = data[1].n3()
+			node["data"]["name"] = data[1].n3()
+			node["data"]["shared_name"] = data[1].n3()
+
+			node["position"]["x"] = random.randint(1400, 6550)
+			node["position"]["y"] = random.randint(2130, 6550)
+			jsonData["elements"]["nodes"].append(node)
+			idGraph += 1
+
+			connection = idGraph - 1
+
+			edge['data']['id'] = str(idGraph)
+			edge['data']['source'] = str(source)
+			edge['data']['target'] = str(connection)
+			edge['data']['cannonicalName'] = data[1].n3() + ' (cc) Connection'
+			edge['data']['SUID'] = idGraph
+			edge['data']['name'] = data[1].n3() + ' (cc) Connection'
+			edge['data']['shared_name'] = data[1].n3() + ' (cc) Connection'
+			jsonData["elements"]["edges"].append(edge)
+
+			idGraph += 1
+
+		for data in g2.predicate_objects(subject=subject2):
+			node, edge = newData()
+
+			node["data"]["id"] = str(idGraph)
+			node["SUID"] = idGraph
+			node["data"]["NodeType"] = "Cheese"
+			node["data"]["cytoscape_alias_list"] = [data[1].n3()]
+			node["data"]["canonicalName"] = data[1].n3()
+			node["data"]["name"] = data[1].n3()
+			node["data"]["shared_name"] = data[1].n3()
+
+			node["position"]["x"] = random.randint(1400, 6550)
+			node["position"]["y"] = random.randint(2130, 6550)
+			jsonData["elements"]["nodes"].append(node)
+			idGraph += 1
+
+			connection = idGraph - 1
+
+			edge['data']['id'] = str(idGraph)
+			edge['data']['source'] = str(target)
+			edge['data']['target'] = str(connection)
+			edge['data']['cannonicalName'] = data[1].n3() + ' (cc) Connection'
+			edge['data']['SUID'] = idGraph
+			edge['data']['name'] = data[1].n3() + ' (cc) Connection'
+			edge['data']['shared_name'] = data[1].n3() + ' (cc) Connection'
+			jsonData["elements"]["edges"].append(edge)
+
+			idGraph += 1
+
+	with open('result.json', 'w') as fp:
+		json.dump(jsonData, fp)
 
 
 def readConfig():
