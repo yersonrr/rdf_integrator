@@ -566,6 +566,8 @@ def integrator(config_file):
 	
 	file.close()
 
+	os.remove(ontology_path)
+	
 	visualization(allJoins, file_name1, file_name2)
 
 

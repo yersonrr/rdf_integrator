@@ -311,6 +311,7 @@ def searchByEndpoint(graph, n, config):
 
 			Finterlink.write(resp_object.decode("utf-8"))
 
+	os.remove('aux'+str(number_aux-1)+'.nt')
 	Finterlink.close()
 
 	save_path = config.get('RDFData','pathToSave')
